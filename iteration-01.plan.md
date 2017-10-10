@@ -2,12 +2,12 @@
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
+ 
 
-
-## Iteration XX
+## Iteration 01
 
  * Start date: October 10th, 2017
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
+ * End date: October 12th, 2017
 
 ## Process
 
@@ -34,6 +34,8 @@ Daily "standup" meeting on slack in the evening around 10PM
 Review and Planning meetings
  * Held Friday 5PM in BA2270
  * In this meeting we will review how the previous sprint went and then select tasks for the following sprint.
+Code Reviews - on top of buddy reviews
+* Review and explain the code posted to each team member at the end of the Review meeting
 
 Describe meetings (and other events) you are planning to have:
 
@@ -42,10 +44,28 @@ Describe meetings (and other events) you are planning to have:
  * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
 
 #### Artifacts
- * Design document - on google drive with user cases, product description and how it will be implememented. It also contains the vision for the MVP.
- * Product backlog - it will be a priority sorted list of taks need to be done for the project to be completed.
- * Sprint backlog - A list of tasks that are in play for the current sprint.
- * Completed tasks - All items completed from Sprints.
+
+ * Design document - on google drive with user cases, product description and how it will be implememented. It also contains the vision for the MVP. Outlines the vision that the product owner has.
+
+ Define: Task
+ 	Has priority:
+ 		Priority is affected positively by # of dependants
+		Priority is affected positively by MVP requiredness
+		Priority is affected positively by how well it can be defined
+ 	Has size:
+ 		Scale of 1 - 5
+ 		1 being a few lines of code
+ 		5 being a complex system requiring multiple classes
+
+ * Product backlog - it will be a priority sorted list of tasks that need to be done for the project to be completed. Smaller, more immediate tasks will be better defined. Google doc for now. later into trello or github projects. Priority assigned by product owner based on above definition.
+
+ * Sprint backlog - A list of tasks that are in play for the current sprint. Assigned by scrumlord based on skillset.
+
+ * Completed tasks - All items completed from Sprints will go into To Test.
+
+ * To Test – All items competed here will go into Done. Else into Product backlog with higher priority.
+
+ * Overflow tasks - All tasks in the previous sprint that was not completed. These lists will be reintegrated into the product backlog with increased priority.
 
 List/describe the artifacts you will produce in order to organize your team.       
 
@@ -54,7 +74,6 @@ List/describe the artifacts you will produce in order to organize your team.
    * How do you keep track of what needs to get done?
    * How do you prioritize tasks?
    * How do tasks get assigned to team members?
-
 
 ## Product
 
