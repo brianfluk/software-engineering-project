@@ -6,7 +6,7 @@
 
 ## Iteration XX
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
+ * Start date: October 10th, 2017
  * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
 
 ## Process
@@ -17,7 +17,23 @@
 
 Describe the different roles on the team and the responsibilities associated with each role.
 
+Product Owner: Acts as the products key stake holder. Ensures that the work being down lines up with the products vision and works closely with the team to design and implemement needed features. Along with grooming the product backlog.
+
+Scrum Lord: Manages the weekly sprints, coordinating meetings and distribute the tasks. Also helps team members get past blockers and aquire resources needed for the project.
+
+Stakeholder: This role is someone who is a professor or university  administrators that want this project in their classroom and will question the importance of implementing each feature.
+
+Team Members: These are the developers, they are responsible for the creation and delivery of the system.
+
+
 #### Events
+
+Daily "standup" meeting on slack in the evening around 10PM 
+ * Each day we will post about what tasks we have completed, any blockers and any help we can offer our teammates.
+ * Discuss what you plan to do the following day.
+Review and Planning meetings
+ * Held Friday 5PM in BA2270
+ * In this meeting we will review how the previous sprint went and then select tasks for the following sprint.
 
 Describe meetings (and other events) you are planning to have:
 
@@ -26,6 +42,10 @@ Describe meetings (and other events) you are planning to have:
  * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
 
 #### Artifacts
+ * Design document - on google drive with user cases, product description and how it will be implememented. It also contains the vision for the MVP.
+ * Product backlog - it will be a priority sorted list of taks need to be done for the project to be completed.
+ * Sprint backlog - A list of tasks that are in play for the current sprint.
+ * Completed tasks - All items completed from Sprints.
 
 List/describe the artifacts you will produce in order to organize your team.       
 
