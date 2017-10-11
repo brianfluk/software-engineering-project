@@ -1,0 +1,30 @@
+Product Backlog Temporary
+
+- Gather research + Pitch ideas to professors
+	Description: We need present our ideas to our stakeholders to see where value can or cannot be created and reformulate our design accordingly. This task should be assigned to all memebers so we can collect the maximum amount of data. Using the date youve gathered 
+	Priority: MAX PRIORITY
+	Size: 5
+
+- Set Up Chat Server
+	Description: Find and establish a server for chat services
+	Priority: Very High
+	Size: 5
+
+- Set up 
+
+- Create Chat Client
+	Description: Create a rudimentary chat client that supports connection between multiple users.
+	Priority: Very High
+	Size: 5
+
+- Create Chat Client Permissions
+	Description: Allow for admin and user clients in the chat client
+	Priority: Medium
+	Size: 3
+
+- Create Chat Room Support
+	Description: Create support for multiple chat clients on a server
+	Priority: High
+	Size: 5
+
+// I'll define these in deeper detail as I go along!
