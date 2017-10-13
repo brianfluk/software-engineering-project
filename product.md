@@ -1,48 +1,124 @@
-# YOUR PRODUCT/TEAM NAME
+# TBD/TheWolvesofCS (terrible name please change andrew)
 
- > _Note:_ This document is meant to evolve throughout the planning phase of your project.    
- > That is, it makes sense for you commit regularly to this file while working on the project (especially edits/additions/deletions to the _Highlights_ section).
+
 
 #### Q1: What are you planning to build?
 
-YOUR ANSWER GOES HERE ...
+A web-based anonymous chat application that serves as a real-time public forum for lectures. We plan to provide value to students who are struggling in courses and to lecturers who want to revise their classes to be more accessible. The product is intended to be lightweight (setup/login time of around 5 minutes), and can be added to any professor's lecture plan as an "afterthought" but still provide great value.
 
- * Short (1 - 2 min' read)
- * Start with a single sentence, high-level description of the product.
- * Be clear - Describe the problem you are solving in simple terms.
- * Be concrete. For example:
-    * What are you planning to build? Is it a website, mobile app,
-   browser extension, command-line app, etc.?      
-    * When describing the problem/need, give concrete examples of common use cases.
- * Focus on *what* your product does, and avoid discussing *how* you're going to implement it.      
-   For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use.
- * **Feel free (and very much encouraged) to include useful diagrams, mock-ups and/or links**.
+*The key features of the application include*
+* Anonymous chatting with peers in the class.
+* Archived chat logs for review by the instructor.
+* Real time annotation of slides provided in pdf format. 
 
+Below is a storyboard of what a use case for our product may look like.
+
+[comment]: <> (I use my own github because im worried the about trying to access images of private repositories. Might break D:)
+
+![The image did not display correctly](https://raw.githubusercontent.com/FreakingBarbarians/FreakingBarbarians_Images/master/CSC301_Project_UseCase_1.png "Greetings human")
+> 1| Left student understands material. Right student is confused.
+> 2| Right student uses our application to ask for clarification.
+> 3| Left student answers.
+> 4| Both students understand.
+---
+**The product will have two modes of operation**. 
+The modes, access points, interfaces, and functions are described in detail below.
+| Userbase | Access                  | Interface            |  Functions                                                                         |
+| -------- | ----------------------- | -------------------- | -----------------------------------------------------------------------------------|
+| Students | Unique Link to Chatroom | Chat bar, Slide view | Chat with peers, annotate slides                                                   |
+| Lecturers| Standard Web-page Login | Website              | Monitor Chatrooms, Create chat rooms, Organise archived chatrooms, Review archives |
+
+![The image did not display correctly](https://raw.githubusercontent.com/FreakingBarbarians/FreakingBarbarians_Images/master/CSC301_UserInteraction_Graph.png "Why are you hovering here. Go hover somewhere else.")
+
+---
+
+
+[comment]: <> (YOUR ANSWER GOES HERE ... * Short \(1 - 2 min' read\) * Start with a single sentence, high-level description of the product. * Be clear - Describe the problem you are solving in simple terms. * Be concrete. For example: * What are you planning to build? Is it a website, mobile app, browser extension, command-line app, etc.? * When describing the problem/need, give concrete examples of common use cases. * Focus on *what* your product does, and avoid discussing *how* you're going to implement it. For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use. * **Feel free \(and very much encouraged\) to include useful diagrams, mock-ups and/or links**.)
 
 #### Q2: Who are your target users?
 
-YOUR ANSWER GOES HERE ...
+Our target users consists of three groups of people. Two kinds of students, and lecturers.
 
- * Short (1 - 2 min' read max)
- * Be specific (e.g. )
- * Feel free (but not obligated) to use personas.        
-   You can create your personas as part of this Markdown file, or add a link to an external site (for example, [Xtensio](https://xtensio.com/user-persona/)).
+---
 
+Jean Luc Picard is an enthusiastic educator who is constantly looking to try out new technologies to augment his teaching style. He teaches"course A" at Starfleet University. Picard's classes have been known to be a bit theory heavy and he is looking for a way to make his lectures more accessible to less theoretical students.
+
+Jean Luc's Goals Are:
+* To give his students the best understanding of the material he can.
+* To use new technologies that augment but do not take over the way he teaches.
+* To improve his lectures to be more accessible to students.
+
+---
+
+Data is an excellent student who is always looking for the opportunity to help his peers. He is well equipped to understand the more theoretical aspects of most courses at Starfleet University and usually finds himself re-explaining lecture material to his peers during study sessions.
+
+Data's Goals Are:
+* To help others understand lecture material
+
+> We note that in the case of Data, the goal "To help others understand the lecture material" may be a means to the end of another goal such as "Making new friends".
+> We are not particularly interested in what his end goal is, just that he will be forthcoming with his knowledge.
+---
+
+Worf is a student who has some (or a lot of) difficulty understanding the material in Picard's lectures. Worf finds himself constantly asking questions in class, and even then does not fully understand the material. He tries to use discussion boards, office hours, and consult with peers afterwards, but dislikes the fact that he has to spend extra time to achieve the same level of understanding as other students. Nevertheless, because he either requires the course or is enthusiastic and interested in the material he is looking for ways that will help him digest the content easier.
+
+Worf's Goals Are:
+* To understand the lecture material
+
+---
+
+[comment]: <> ( YOUR ANSWER GOES HERE ... Short \(1 - 2 min' read max\) Be specific \(e.g. \) feel free \(but not obligated\) to use personas. You can create your personas as part of this Markdown file, or add a link to an external site \(for example, \[Xtensio\]\(https:\/\/xtensio.com\/user-persona/\)\))
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
-YOUR ANSWER GOES HERE ...
+_We will first consider the beneifit that our product as described in **Q1** would give to the personas mentioned in **Q2** and then consider alternative products and why they are unsuitable in comparison to our application._
 
- * Short (1 - 2 min' read max)
- * We want you to "connect the dots" for us - Why does your product (as described in your answer to Q1) fits the needs of your users (as described in your answer to Q2)?
- * Explain the benefits of your product explicitly & clearly. For example:
-    * Save users time (how much?)
-    * Allow users to discover new information (which information? And, why couldn't they discover it before?)
-    * Provide users with more accurate and/or informative data (what kind of data? Why is it useful to them?)
+We note that with enough time lecturers like Picard, and students like Worf and Data will eventually achieve their goals. But the amount of time taken can be compressed, and indeed one of main benefits of our application is to save time. We also note that our application would not function without the presence of students such as Data who are not only willing to explain the material, but also do it in an effective manner.
 
+For Picard, the chat archives will provide an invaluable insight of the student body's reaction to the material. The volume of questions, comments, recurrence of similar questions will be vital in diagnosing sub-optimal material presentation. Picard saves time extracting this information through other means (the information is available as its being created). Picard may also gain information that would otherwise be unavailable due to a variety of factors that come into play after the lecture ends. In example, a student notes that the lecturer repeatedly uses a confusing term, lecture ends, the student looks up the term, the problem is solved, but the lecturer never learns of the existence of a problem to begin with.
+
+For the students, the application will allow Worf to potentially understand material as its being presented, saving the time that he would have to spend reading through  a textbook or classroom forum. In converse, the application will allow Data to aid students as aid is needed, instead of having to spend time later using a classroom forum or during study sessions.
+
+| Persona | Time Saved       | New Information Gained                          |
+| ------- | ----------       | ----------------------------------------------- |
+| Picard  | 10's Hrs         | Info that would be lost to post-lecture factors |
+| Data    | not well defined | None                                            |
+| Worf    | < 10 Hrs         | None                                            |
+
+> The time that Data saves is not well defined as it is based on the social structure of Data's relationships with students who are struggling to understand material.
+---
+
+**Alternative Products**
+
+For each alternative system, the system is not an optimal solution because it is unsuitable for the personas described or our application fulfills the task in a more efficient manner.
+
+* TopHat
+    * Not lightweight, requires lecturer to fully integrate TopHat into slides as well as requires the student body to use TopHat
+    * Subscription based, costs money.
+* Piazza
+    * Message delivery system is too overhead heavy (internet forum/post based), and will not adapt well into a lecture scenario.
+        * Think email vs instant messaging
+    * Out of classroom, does not provide a realtime solutioon. And students have to take extra time to digest material.
+* The google thing used in 301 lecture. I forget the name of but it will be inserted!
+    * Because the system sorts automatically on upvotes, responses to questions can be mismatched and lost when messages are sorted.
+    * Does not provide slide annotation
+* Any chat generic application. FB messenger/Slack/Skype/Discord
+    * Does not provide slide annotation.
+    * Does not allow lecturer to efficiently organize archives of chats.
+    * Not anonymous, may discourage students from participating in discussion.
+    * Provides unecessary functionality.
+    * Can distract users.
+
+[comment]: <> (
+YOUR ANSWER GOES HERE ... Short \(1 - 2 min' read max\) We want you to "connect the dots" for us - Why does your product \(as described in your answer to Q1\) fits the needs of your users \(as described in your answer to Q2\)? Explain the benefits of your product explicitly & clearly. For example Save users time \(how much?\) Allow users to discover new information \(which information? And, why couldn't they discover it before?\) Provide users with more accurate and/or informative data \(what kind of data? Why is it useful to them?\) )
 
 ----
 
 ### Highlights
+
+Literally. I was like. Let's do twitch chat for lectures.
+
+AND HERE WE ARE!!!!
+
+:(
 
 YOUR ANSWER GOES HERE ...
 
