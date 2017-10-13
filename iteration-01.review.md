@@ -9,11 +9,11 @@
 
 ## Process - Reflection
 
-Introduction: This week was spent figuring out logistics and coming up with an intial design idea and plans. We did some initial reasearch on technologies available to us and set up a group chat. 
+Introduction: This week was spent figuring out logistics and coming up with an initial design idea and plans. We did some initial research on technologies available to us and set up a group chat. 
 
 #### Decisions that turned out well
 
-After switching from a facebook chat to slack, group comunication improved with the use of slack channels to seperate out conversation topics such as our standup and technology planning. Task tracking will become more important as the tasks become more technical and this week we reasearched and found a few options. Right now the descision is to use Git projects, but we also aquired a jira licesnse in case we need a more powerful tool, with more operating overhead. The other big task for the week was coming up with an initial backlog of tasks. This helped get the team to do initial reasearch and survey target users. The decision to survery users was really helpful, we learned that a feature to help match study buddies would be 
+After switching from a facebook chat to slack, group communication improved with the use of slack channels to separate out conversation topics such as our standup and technology planning. Task tracking will become more important as the tasks become more technical and this week we reasearched and found a few options. Right now the decision is to use Git projects, but we also acquired a jira license in case we need a more powerful tool, with more operating overhead. The other big task for the week was coming up with an initial backlog of tasks. This helped get the team to do initial research and survey target users. The decision to survery users was really helpful, we learned that a feature to help match study buddies would be 
 
 List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
 
