@@ -53,16 +53,20 @@ List any process-related changes you are planning to make (if there are any)
 ## Product - Review
 
 #### Goals and/or tasks that were met/completed:
-The goal of setting up a slack chat was met. 
-We decided on a hosting service, heroku.com because it is free and widely used. This means that there will be lots of support for issues we run into and it will be compatible with a wide variety of plugins. Hopefully this will make development simpler.
-The product.md and iteration-01.plan.md were both completed. They can be found in this repo.
+* The goal of setting up a slack chat was met. 
+* We decided on a hosting service, heroku.com because it is free and widely used. This means that there will be lots of support for issues we run into and it will be compatible with a wide variety of plugins. Hopefully this will make development simpler.
+* The product.md and iteration-01.plan.md were both completed. They can be found in this repo.
+
 
  * From most to least important.
  * Refer/link to artifact(s) that show that a goal/task was met/completed.
  * If a goal/task was not part of the original iteration plan, please mention it.
 
 #### Goals and/or tasks that were planned but not met/completed:
-Initially we were a little too ambitious and had hoped to have created an initial server instance. This task was not taken on because it could have locked us down and the project was not ready yet. This task makes more sense to work on in the next two sprints. We also could not figure out a set time for weekly meetings yet due to conflicting academic schedules.
+* Initially we were a little too ambitious and had hoped to have created an initial server instance. This task was not taken on because it could have locked us down and the project was not ready yet. This task makes more sense to work on in the next two sprints. 
+* We also could not figure out a set time for weekly meetings yet due to conflicting academic schedules.
+
+
 
  * From most to least important.
  * For each goal/task, explain why it was not met/completed.      
