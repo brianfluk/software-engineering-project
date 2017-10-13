@@ -25,14 +25,17 @@ Team Members: These are the developers, they are responsible for the creation an
 #### Events
 
 **Daily "Standup"**
+
 Unfortunately due to strenuous courseloads on for some of our group members, in-person daily meetups will be impossible. Instead we will facilitate daily "chat-meets" at 10pm every day where members will discuss, blockers, progress, and plans.
 
 ---
 **Review and Planning Meetings**
+
 We decided to have our weekly Review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 5pm every friday in BA2270. During this meeting we will discuss the plan for next week, assign tasks, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
 
 ---
 **Code Reviews**
+
 Code reviews will happen when a task is completed. During a code review, at least two people, the creator of the code and the reviewer, will look over the code. The creator will explain the high level idea of the system to the reviewer. The reviewer will then determine if the code was created in a modular, maintainable and readable way. If refactoring is needed a task will be made in the product backlog. If refactoring is not needed, then tests will be written for the code. If testing does not pass a task will be made in the product backlog. Otherwise the task is considered "done".
 
 | Event | Time | TimeScale | Location | Actions |
