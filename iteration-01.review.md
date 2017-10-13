@@ -1,8 +1,5 @@
 # Team 17
 
- > _Note:_ This document is meant to be written during (or shortly after) your review meeting, which should happen fairly close to the due date.      
- >      
- > _Suggestion:_ Have your review meeting a day or two before the due date. This way you will have some time to go over (and edit) this document, and all team members should have a chance to make their contribution.
 
 
 ## Iteration 01 - Review & Retrospect
@@ -12,9 +9,11 @@
 
 ## Process - Reflection
 
-(Optional) Short introduction
+Introduction: This week was spent figuring out logistics and coming up with an intial design idea and plans. We did some initial reasearch on technologies available to us and set up a group chat. 
 
 #### Decisions that turned out well
+
+After switching from a facebook chat to slack, group comunication improved with the use of slack channels to seperate out conversation topics such as our standup and technology planning. Task tracking will become more important as the tasks become more technical and this week we reasearched and found a few options. Right now the descision is to use Git projects, but we also aquired a jira licesnse in case we need a more powerful tool, with more operating overhead. The other big task for the week was coming up with an initial backlog of tasks. This helped get the team to do initial reasearch and survey target users. The decision to survery users was really helpful, we learned that a feature to help match study buddies would be 
 
 List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
 
@@ -26,6 +25,8 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
 
 #### Decisions that did not turn out as well as we hoped
 
+Finding a time that works for everyone to meet has been challenging and needs to be improved for future. Currently our solution has been using slack to talk and meeting up in groups that are smaller than the whole team. Initially we thought we could meet at a certain time, but academic schedules have gotten in the way. To get around this we hav been comunicating on slack and in person when we pass eachother in Bahen. 
+
 List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
 
  * 2 - 4 decisions.
@@ -34,6 +35,7 @@ List process-related (i.e. team organization) decisions that, in retrospect, wer
 
 
 #### Planned changes
+We are planning to change the way we schedule meetings. To help with this we made a doodle where everyone put in their schedules for the week and we are discussing moving certain things to online in order to avoid issues created by lack of comunication. Also we are going to try adding another in person during meeting the week to keep everyone in sync. 
 
 List any process-related changes you are planning to make (if there are any)
 
@@ -44,18 +46,25 @@ List any process-related changes you are planning to make (if there are any)
 ## Product - Review
 
 #### Goals and/or tasks that were met/completed:
+The goal of setting up a slack chat was met. 
+We decided on a hosting service, heroku.com because it is free and widley use. This means that there will be lots of support for issues we run into and it will be compatible with a wide variety of plugins. Hopefully this will make development simpler.
+The product.md and iteration-01.plan.md were both completed. They can be found in this repo.
 
  * From most to least important.
  * Refer/link to artifact(s) that show that a goal/task was met/completed.
  * If a goal/task was not part of the original iteration plan, please mention it.
 
 #### Goals and/or tasks that were planned but not met/completed:
+Initially we were a little too ambitious and had hoped to have created an intial server instance. This task was not taken on because it could have locked us down and the project was not ready yet. This task makes more sense to work on in the next two sprints.
 
  * From most to least important.
  * For each goal/task, explain why it was not met/completed.      
    e.g. Did you change your mind, or did you just not get to it yet?
 
 ## Meeting Highlights
+* Figured out that it makes sense to try and user React and node.js
+* Heroku.com is the best available option for hosting, need to set it up for next sprint.
+* github projects will be helpful in managing the project.
 
 Going into the next iteration, our main insights are:
 
