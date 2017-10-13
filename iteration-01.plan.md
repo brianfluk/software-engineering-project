@@ -1,7 +1,5 @@
 # Team 17
 
- > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
- > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
  
 
 ## Iteration 01
@@ -11,7 +9,7 @@
 
 ## Process
 
-(Optional:) Quick introduction
+Quick introduction: We are going to be following the Agile Scrum methodologies taught in class. We will do some modifications to fit our academic schedules. This week we met up and discussed our ideas and what needs to be researched in order to move forward.
 
 #### Roles & responsibilities
 
