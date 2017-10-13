@@ -13,28 +13,33 @@ Quick introduction: We are going to be following the Agile Scrum methodologies t
 
 #### Roles & responsibilities
 
-Describe the different roles on the team and the responsibilities associated with each role.
+**Product Owner:** Acts as the products key stake holder. Ensures that the work being done lines up with the products vision and works closely with the team to design and implemement needed features. As well the product owner populates and maintains the product backlog.
 
-Product Owner: Acts as the products key stake holder. Ensures that the work being down lines up with the products vision and works closely with the team to design and implemement needed features. Along with grooming the product backlog.
+**Scrum Lord:** Manages the weekly sprints, coordinates meetings and distributes the tasks from the backlog. Also helps team members get past blockers and aquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
 
-Scrum Lord: Manages the weekly sprints, coordinating meetings and distribute the tasks. Also helps team members get past blockers and aquire resources needed for the project.
-
-Stakeholder: This role is someone who is a professor or university  administrators that want this project in their classroom and will question the importance of implementing each feature.
+**Stakeholder:** This role is someone who is a professor, student, or university  administrator who wants this project in their classroom and will question the importance of implementing each feature. We plan to have at least one stakeholder 
 
 Team Members: These are the developers, they are responsible for the creation and delivery of the system.
 
 
 #### Events
 
-Daily "standup" meeting on slack in the evening around 10PM 
- * Each day we will post about what tasks we have completed, any blockers and any help we can offer our teammates.
- * Discuss what you plan to do the following day.
-Review and Planning meetings
- * Held Friday 5PM in BA2270
- * In this meeting we will review how the previous sprint went and then select tasks for the following sprint.
-Code Reviews - on top of buddy reviews
-* Review and explain the code posted to each team member at the end of the Review meeting
+**Daily "Standup"**
+Unfortunately due to strenuous courseloads on for some of our group members, in-person daily meetups will be impossible. Instead we will facilitate daily "chat-meets" at 10pm every day where members will discuss, blockers, progress, and plans.
 
+---
+**Review and Planning Meetings**
+We decided to have our weekly Review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 5pm every friday in BA2270. During this meeting we will discuss the plan for next week, assign tasks, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
+
+---
+**Code Reviews**
+Code reviews will happen when a task is completed. During a code review, at least two people, the creator of the code and the reviewer, will look over the code. The creator will explain the high level idea of the system to the reviewer. The reviewer will then determine if the code was created in a modular, maintainable and readable way. If refactoring is needed a task will be made in the product backlog. If refactoring is not needed, then tests will be written for the code. If testing does not pass a task will be made in the product backlog. Otherwise the task is considered "done".
+
+| Event | Time | TimeScale | Location | Actions |
+| ----- | ---- | --------- | -------- | ------- |
+| Standup| Daily 10pm | 10-20 mins | Slack | Discuss daily events, discuss blockers, discuss plans |
+| Review and Planning Meeting | Fridays 5pm | 1-2hrs | BA2270 | Review & revise collaboration, manage completed tasks, manage backlog, plan for next week, touch base with stakeholders, evaluate value generated, demo and feedback |
+| Code Reviews | spontaneous | 10mins - 1hrs | Slack | Review and test code, create "touch up" tasks if necessary, mark tasks as "done"|
 
 #### Artifacts
 
