@@ -93,8 +93,10 @@ For each alternative system, the system is not an optimal solution because it is
     * Message delivery system is too overhead heavy (internet forum/post based), and will not adapt well into a lecture scenario.
         * Think email vs instant messaging
     * Out of classroom, does not provide a realtime solutioon. And students have to take extra time to digest material.
-* The google thing used in 301 lecture. I forget the name of but it will be inserted!
+* Google presentation with questions URL.
     * Because the system sorts automatically on upvotes, responses to questions can be mismatched and lost when messages are sorted.
+    * Does not record responses to questions, so it won't help after the lecture/ presentation.
+    * Questions are not associated with a slide.
     * Does not provide slide annotation
 * Any chat generic application. FB messenger/Slack/Skype/Discord
     * Does not provide slide annotation.
@@ -106,12 +108,16 @@ For each alternative system, the system is not an optimal solution because it is
 ----
 
 ### Highlights
+During our planning stage we came up with a few project ideas. The first was a service for hosting slackbots that helped users integrate important information into their chats such as a bot that would pull information from portal or a CS course web page. There was another idea to help students study and practice topics they found difficult by curating previous offerings of courses practice problems, designed for students to search by topic. The other contender was a mashup of google api's to create pop-up chatrooms about news topics in local areas. Bellow is a chart of positives and negatives of the potetial ideas compared with the idea that we decided to go with. 
 
-Literally. I was like. Let's do twitch chat for lectures.
+| Ideas:         | Python Slack Bots                                                                                                                                                                                                                           | Practice Problem Archive                                                                                           | Google New Chatroom                                                                                       | In Class Forum                                                                                                                                                                                                                                                                |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Positives      | Fun for groups; Can save time on getting   important notifications                                                                                                                                                                          | Saves time searching for topics ; Students can easily study relevant material                                      | Creates a space for people to discuss current topics. Potential to meet and befriend people in your area. | Helps students solve mutual problems; Creates a way for professors to get  class by class feedback. Allows students to demonstrate knowledge and practice problems they feel comfortable with. Creates Archive of course lecture questions.                                   |
+| Negatives      | - There are many chatgroup bot;   hosting services with good premade bots; Integration would be difficult and    it would be hard to create something    better than the other services;  Hosting the bots would be a logistical challenge. | Relies on people adding information to it; Storage of archive; Organizing the problems; Creating search algorithm. | Moderating it would be hard. Scope of project is not big enough.                                          | Could be a distraction to users. Creating something different from piazza.                                                                                                                                                                                                    |
+| Value to users | - Saves time setting up and creating bots, but most  of the stuff would be fairly simple to create.                                                                                                                                         | This adds a lot of value to the student users. Does not add value to teachers and those who populate it.           | Creates a space for people to discuss problems and get a sense of public opinions.                        | Helps students learn by saving time on concepts they don't understand. Saves teacher time since they don't have to answer every question. Teachers save time learning what students liked and didn't like about the lecture and can improve for later offerings and lectures. |
 
-AND HERE WE ARE!!!!
+In the end we decided that the size of the in course question project was appropriate for the scope of the project. Compared with the other ideas it added the most amount of value to our focus group. The other projects that helped with courses relied too much on students popuating information and building it required search optimization that we don't know yet. The questions forum would use technologies that our group has expierence with and would help lectureres and students.
 
-:(
 
 YOUR ANSWER GOES HERE ...
 
