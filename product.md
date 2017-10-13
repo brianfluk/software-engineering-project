@@ -21,6 +21,7 @@ Below is a storyboard of what a use case for our product may look like.
 ---
 **The product will have two modes of operation**. 
 The modes, access points, interfaces, and functions are described in detail below.
+
 | Userbase | Access | Interface | Functions |
 | -------- | ------ | --------- | ----------|
 | Students | Unique Link to Chatroom | Chat bar, Slide view | Chat with peers, annotate slides |
