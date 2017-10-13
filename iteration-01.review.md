@@ -13,7 +13,7 @@ Introduction: This week was spent figuring out logistics and coming up with an i
 
 #### Decisions that turned out well
 
-After switching from a facebook chat to slack, group communication improved with the use of slack channels to separate out conversation topics such as our standup and technology planning. Task tracking will become more important as the tasks become more technical and this week we reasearched and found a few options. Right now the decision is to use Git projects, but we also acquired a jira license in case we need a more powerful tool, with more operating overhead. The other big task for the week was coming up with an initial backlog of tasks. This helped get the team to do initial research and survey target users. The decision to survery users was really helpful, we learned that a feature to help match study buddies would be 
+After switching from a facebook chat to slack, group communication improved with the use of slack channels to separate out conversation topics such as our standup and technology planning. Task tracking will become more important as the tasks become more technical and this week we reasearched and found a few options. Right now the decision is to use Git projects, but we also acquired a jira license in case we need a more powerful tool, with more operating overhead. The other big task for the week was coming up with an initial backlog of tasks. This helped get the team to do initial research and survey target users. The decision to survey users was really helpful, we learned that a feature to help match study buddies would be ******
 
 List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
 
@@ -47,7 +47,7 @@ List any process-related changes you are planning to make (if there are any)
 
 #### Goals and/or tasks that were met/completed:
 The goal of setting up a slack chat was met. 
-We decided on a hosting service, heroku.com because it is free and widley use. This means that there will be lots of support for issues we run into and it will be compatible with a wide variety of plugins. Hopefully this will make development simpler.
+We decided on a hosting service, heroku.com because it is free and widely used. This means that there will be lots of support for issues we run into and it will be compatible with a wide variety of plugins. Hopefully this will make development simpler.
 The product.md and iteration-01.plan.md were both completed. They can be found in this repo.
 
  * From most to least important.
@@ -55,7 +55,7 @@ The product.md and iteration-01.plan.md were both completed. They can be found i
  * If a goal/task was not part of the original iteration plan, please mention it.
 
 #### Goals and/or tasks that were planned but not met/completed:
-Initially we were a little too ambitious and had hoped to have created an intial server instance. This task was not taken on because it could have locked us down and the project was not ready yet. This task makes more sense to work on in the next two sprints.
+Initially we were a little too ambitious and had hoped to have created an initial server instance. This task was not taken on because it could have locked us down and the project was not ready yet. This task makes more sense to work on in the next two sprints.
 
  * From most to least important.
  * For each goal/task, explain why it was not met/completed.      
