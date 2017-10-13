@@ -1,4 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
+# Team 17
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
@@ -37,11 +37,6 @@ Review and Planning meetings
 Code Reviews - on top of buddy reviews
 * Review and explain the code posted to each team member at the end of the Review meeting
 
-Describe meetings (and other events) you are planning to have:
-
- * When and where? In-person or online?
- * What's the purpose of each meeting?
- * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
 
 #### Artifacts
 
@@ -57,9 +52,9 @@ Describe meetings (and other events) you are planning to have:
  		1 being a few lines of code
  		5 being a complex system requiring multiple classes
 
- * Product backlog - it will be a priority sorted list of tasks that need to be done for the project to be completed. Smaller, more immediate tasks will be better defined. Google doc for now. later into trello or github projects. Priority assigned by product owner based on above definition.
+ * Product backlog - it will be a priority sorted list of tasks that need to be done for the project to be completed. Smaller, more immediate tasks will be better defined. Google doc for now. As we decide how much structure is needed, we will switch into trello, jira or github projects. Priority assigned by product owner based on above definition.
 
- * Sprint backlog - A list of tasks that are in play for the current sprint. Assigned by scrumlord based on skillset.
+ * Sprint backlog - A list of tasks that are in play for the current sprint. Assigned by scrumlord based on skillset of programmers and priority of task.
 
  * Completed tasks - All items completed from Sprints will go into To Test.
 
@@ -78,12 +73,29 @@ List/describe the artifacts you will produce in order to organize your team.
 ## Product
 
 #### Goals and tasks
+Goals:
+ * Come up with team workflow and roles.
+ * Create an outline of how the project will be made.
+ * Figure out what features to prioritize. 
+ * Determine a good spot to host our project.
+ * Set up a meeting
+ 
+Tasks:
+ * Talk to students and teachers about how they would use a tool like this.
+ * Meet as a group and discuss possible design descisions and directions of the project.
+ * Set up slack for group comunication.
+ * Work on 1rst deliverable.
+ * Research potetial hosting services. One such option is Heroku.
 
  * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
  * Order the items from most to least important.
  * Feel free (but not obligated) to specify some/all tasks as user stories.
 
 #### Artifacts
+* Created project.md and iteration-01.plan.md, documenting initial plans for the project.
+* Created a diagram showing the development workflow.
+* A slack group chat with daily messages talking about the tasks worked on and completed.
+* A file with a temporary product backlog and some initial tasks that need to be completed in order to move forward.
 
 List/describe the artifacts you will produce in order to present your project idea.
 
