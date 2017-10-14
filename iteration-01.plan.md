@@ -103,8 +103,4 @@ Tasks:
 * User Interaction Diagram - This will serve to clarify how users will interact with the system and give us a better idea of how to design the system.
 * User Storyboards - Will show a use cases of our system in a graphical context, will aid in communication of our idea.
 * User Personas - Allows us to design our system to effectively satisfy the needs of a targeted user group.
-
- * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
- * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
- * Be concise, yet precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
+* UI Mockups - Will allow us to begin designing user interface and web pages.
