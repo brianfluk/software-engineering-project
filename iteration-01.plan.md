@@ -39,7 +39,7 @@ We decided to have our weekly review and planning meetings back to back, so we c
 
 Code reviews will happen when a task is completed. During a code review, at least two people, the creator of the code and the reviewer, will look over the code. The creator will explain the high level idea of the system to the reviewer. The reviewer will then determine if the code was created in a modular, maintainable and readable way. If refactoring is needed a task will be made in the product backlog. If refactoring is not needed, then tests will be written for the code. If testing does not pass a task will be made in the product backlog. Otherwise the task is considered "done".
 
-| Event | Time | TimeScale | Location | Actions |
+| Event | Time | Timescale | Location | Actions |
 | ----- | ---- | --------- | -------- | ------- |
 | Standup| Daily 10pm | 10-20 mins | Slack | Discuss daily events, discuss blockers, discuss plans |
 | Review and Planning Meeting | Fridays 5pm | 1-2hrs | BA2270 | Review & revise collaboration, manage completed tasks, manage backlog, plan for next week, touch base with stakeholders, evaluate value generated, demo and feedback |
