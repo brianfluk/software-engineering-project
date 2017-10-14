@@ -15,8 +15,11 @@ Below is a storyboard of what a use case for our product may look like.
 
 ![The image did not display correctly](https://raw.githubusercontent.com/FreakingBarbarians/FreakingBarbarians_Images/master/CSC301_Project_UseCase_1.png "Greetings human")
 > 1| Left student understands material. Right student is confused.
+
 > 2| Right student uses our application to ask for clarification.
+
 > 3| Left student answers.
+
 > 4| Both students understand.
 ---
 **The product will have two modes of operation**. 
@@ -50,13 +53,14 @@ Jean Luc's Goals Are:
 Data is an excellent student who is always looking for the opportunity to help his peers. He is well equipped to understand the more theoretical aspects of most courses at Starfleet University and usually finds himself re-explaining lecture material to his peers during study sessions.
 
 Data's Goals Are:
-* To help others understand lecture material
+* To help others understand the lecture material
 
 > We note that in the case of Data, the goal "To help others understand the lecture material" may be a means to the end of another goal such as "Making new friends".
+
 > We are not particularly interested in what his end goal is, just that he will be forthcoming with his knowledge.
 ---
 
-Worf is a student who has some (or a lot of) difficulty understanding the material in Picard's lectures. Worf finds himself constantly asking questions in class, and even then does not fully understand the material. He tries to use discussion boards, office hours, and consult with peers afterwards, but dislikes the fact that he has to spend extra time to achieve the same level of understanding as other students. Nevertheless, because he either requires the course or is enthusiastic and interested in the material he is looking for ways that will help him digest the content easier.
+Worf is a student who has some (or a lot of) difficulty understanding the material in Picard's lectures. Worf finds himself constantly asking questions in class, and even then does not fully understand the material. He tries to use discussion boards, office hours, and consult with peers afterwards, but dislikes the fact that he has to spend extra time to achieve the same level of understanding as other students. Nevertheless, because he either requires the course or is enthusiastic and interested in the material, he is looking for ways that will help him digest the content easier.
 
 Worf's Goals Are:
 * To understand the lecture material
@@ -69,7 +73,7 @@ _We will first consider the benefit that our product as described in **Q1** woul
 
 We note that with enough time lecturers like Picard, and students like Worf and Data will eventually achieve their goals. But the amount of time taken can be compressed, and indeed one of main benefits of our application is to save time. We also note that our application would not function without the presence of students such as Data who are not only willing to explain the material, but also do it in an effective manner.
 
-For Picard, the chat archives will provide an invaluable insight of the student body's reaction to the material. The volume of questions, comments, recurrence of similar questions will be vital in diagnosing sub-optimal material presentation. Picard saves time extracting this information through other means (the information is available as its being created). Picard may also gain information that would otherwise be unavailable due to a variety of factors that come into play after the lecture ends. In example, a student notes that the lecturer repeatedly uses a confusing term, lecture ends, the student looks up the term, the problem is solved, but the lecturer never learns of the existence of a problem to begin with.
+For Picard, the chat archives will provide an invaluable insight of the student body's reaction to the material. The volume of questions, comments, and recurrence of similar questions will be vital in diagnosing sub-optimal material presentation. Picard saves the time he would spend extracting this information through other means. Picard may also gain information that would otherwise be unavailable due to a variety of factors that come into play after the lecture ends. In example, a student notes that the lecturer repeatedly uses a confusing term. When lecture ends the student looks up the term and the problem is solved but the lecturer never learns of the existence of a problem to begin with.
 
 For the students, the application will allow Worf to potentially understand material as its being presented, saving the time that he would have to spend reading through a textbook or classroom forum. In converse, the application will allow Data to aid students as aid is needed, instead of having to spend time later using a classroom forum or during study sessions.
 
@@ -116,17 +120,4 @@ During our planning stage we came up with a few project ideas. The first was a s
 | Negatives      | - There are many chatgroup bot;   hosting services with good premade bots; Integration would be difficult and    it would be hard to create something    better than the other services;  Hosting the bots would be a logistical challenge. | Relies on people adding information to it; Storage of archive; Organizing the problems; Creating search algorithm. | Moderating it would be hard. Scope of project is not big enough.                                          | Could be a distraction to users. Creating something different from piazza.                                                                                                                                                                                                    |
 | Value to users | - Saves time setting up and creating bots, but most of the stuff would be fairly simple to create.                                                                                                                                         | This adds a lot of value to the student users. Does not add value to teachers and those who populate it.           | Creates a space for people to discuss problems and get a sense of public opinions.                        | Helps students learn by saving time on concepts they don't understand. Saves teacher time since they don't have to answer every question. Teachers save time learning what students liked and didn't like about the lecture and can improve for later offerings and lectures. |
 
-In the end we decided that the size of the in course question project was appropriate for the scope of the project. Compared with the other ideas it added the most amount of value to our focus group. The other projects that helped with courses relied too much on students populating information and building it required search optimization that we don't know yet. The questions forum would use technologies that our group has experience with and would help lecturers and students.
-
-
-YOUR ANSWER GOES HERE ...
-
-Specify 3 - 5 key decisions and/or insights that came up during your meetings
-and/or collaborative process.
-
- * Short (5 min' read max)
- * Decisions can be related to the product and/or the team process.
-    * Mention which alternatives you were considering.
-    * Present the arguments for each alternative.
-    * Explain why the option you decided on makes the most sense for your team/product/users.
- * Essentially, we want to understand how (and why) you ended up with your current product plan.
+In the end we decided that the In Class Forum was appropriate for the scope of the project. Compared with the other ideas it added the most amount of value to our focus group. The other projects that helped with courses relied too much on students populating information. The questions forum would use technologies that our group has experience with and would help lecturers and students.
