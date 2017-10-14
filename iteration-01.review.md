@@ -19,7 +19,7 @@ Introduction: This week was spent figuring out logistics and coming up with an i
 
 #### Decisions that did not turn out as well as we hoped
 
-* Finding a time that works for everyone to meet has been challenging and needs to be improved for future. We are hoping that using doodle will aid us in this endeavor.
+* Finding a time that works for everyone to meet has been challenging and needs to be improved for future sprints. We are hoping that using doodle will aid us in this endeavor.
 * Currently our solution has been using slack to talk and meeting up in groups that are smaller than the whole team. Initially we thought we could meet at a certain time, but academic schedules have gotten in the way. To get around this we have been communicating on slack and in person when we pass each other in Bahen. But we rarely pass each-other in Bahen so we may need to rely on tutorials.
 * Creating enough tasks for everyone in the team to do could have gone better because we are following scrum development and several roles were shared, so not everyone had a specific role or task to do.
 
