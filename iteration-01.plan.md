@@ -1,4 +1,4 @@
-# Team 17
+# Scrum-Vaders (Team 17)
 
  
 
@@ -15,7 +15,7 @@ Quick introduction: We are going to be following the Agile Scrum methodologies t
 
 **Product Owner:** (Raymond Gao) Acts as the products key stake holder. Ensures that the work being done lines up with the products vision and works closely with the team to design and implemement needed features. As well the product owner populates and maintains the product backlog.
 
-**Scrum Lord:** (Andrew Sabot) Manages the weekly sprints, coordinates meetings and distributes the tasks from the backlog. Also helps team members get past blockers and aquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
+**Scrum Lord:** (Andrew Sabot) Manages the weekly sprints, coordinates meetings and decides what tasks from the backlog will be in each sprint. Also helps team members get past blockers and aquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
 
 **Stakeholder:** (Brandon and Max) A team member who provides feedback on value generated and progress through the lense of one of our three stakeholders; students, lecturers, and course administrators.
 
@@ -32,7 +32,7 @@ Unfortunately due to strenuous courseloads for some of our group members, in-per
 ---
 **Review and Planning Meetings**
 
-We decided to have our weekly Review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 5pm every friday in BA2270. During this meeting we will discuss the plan for next week, assign tasks, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
+We decided to have our weekly review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 5pm every friday in BA2270. During this meeting we will discuss the plan for next week, assign tasks for the sprint, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
 
 ---
 **Code Reviews**
@@ -49,7 +49,7 @@ Code reviews will happen when a task is completed. During a code review, at leas
 
 Below is a diagram that describes the organization of our team into a productive engine.
 
-![The image did not display correctly](https://raw.githubusercontent.com/csc301-fall-2017/project-team-17/master/images/Workflow.png "Why are you hovering here. Go hover somewhere else.")
+![The image did not display correctly](https://raw.githubusercontent.com/FreakingBarbarians/FreakingBarbarians_Images/master/CSC301_TeamWorkflow.png "HEY YOU. I HOPE YOU HAVE A NICE DAY")
 
 To facilitate this process we will need to have these artifacts.
 
