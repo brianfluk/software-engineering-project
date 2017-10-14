@@ -13,11 +13,11 @@ Quick introduction: We are going to be following the Agile Scrum methodologies t
 
 #### Roles & responsibilities
 
-**Product Owner:** (Raymond Gao) Acts as the products key stake holder. Ensures that the work being done lines up with the products vision and works closely with the team to design and implemement needed features. As well the product owner populates and maintains the product backlog.
+**Product Owner:** (Raymond Gao) Acts as the products key stake holder. Ensures that the work being done lines up with the products vision and works closely with the team to design and implement needed features. As well the product owner populates and maintains the product backlog.
 
-**Scrum Lord:** (Andrew Sabot) Manages the weekly sprints, coordinates meetings and decides what tasks from the backlog will be in each sprint. Also helps team members get past blockers and aquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
+**Scrum Lord:** (Andrew Sabot) Manages the weekly sprints, coordinates meetings and decides what tasks from the backlog will be in each sprint. Also helps team members get past blockers and acquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
 
-**Stakeholder:** (Brandon and Max) A team member who provides feedback on value generated and progress through the lense of one of our three stakeholders; students, lecturers, and course administrators.
+**Stakeholder:** (Brandon and Max) A team member who provides feedback on value generated and progress through the lens of one of our three stakeholders; students, lecturers, and course administrators.
 
 **Architect:** (Brandon and Anas) A team member who designs the high level structure of the system.
 
@@ -27,12 +27,12 @@ Quick introduction: We are going to be following the Agile Scrum methodologies t
 
 **Daily "Standup"**
 
-Unfortunately due to strenuous courseloads for some of our group members, in-person daily meetups will be impossible. Instead we will facilitate daily "chat-meets" at 10pm every day where members will discuss, blockers, progress, and plans.
+Unfortunately due to strenuous course-loads for some of our group members, in-person daily meetups will be impossible. Instead we will facilitate daily "chat-meets" at 10pm every day where members will discuss, blockers, progress, and plans.
 
 ---
 **Review and Planning Meetings**
 
-We decided to have our weekly review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 5pm every friday in BA2270. During this meeting we will discuss the plan for next week, assign tasks for the sprint, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
+We decided to have our weekly review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 5pm every Friday in BA2270. During this meeting we will discuss the plan for next week, assign tasks for the sprint, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
 
 ---
 **Code Reviews**
@@ -53,13 +53,13 @@ Below is a diagram that describes the organization of our team into a productive
 
 To facilitate this process we will need to have these artifacts.
 
- * Task - a defined job that one person can take take on. A task has several properties.
+ * Task - a defined job that one person can take on. A task has several properties.
  	* Description : A description of the task. What needs to be done, what purpose the completed task should have.
 	* Size : An estimation of the size of the task from 1 (several lines) to 5 (several classes)
 	* Priority : A metric of urgency for the task, which is affected positively by how many other tasks depend on it, how well defined the task is, and whether the MVP requires the task to function
 	* Tags : A set of identifiers that describes the mechanical nature of the task. i.e. a "Web" tag defines a task that will require web development, a "Server" tag defines a task that requires server knowledge.
 	
-> Tasks will be assigned in a self serve manner from the Sprint backlog every week. It is expected that all the tasks in the Sprint backlog are assigned to someone
+> Tasks will be assigned in a selfserve manner from the Sprint backlog every week. It is expected that all the tasks in the Sprint backlog are assigned to someone
 	
  * Product backlog - A priority sorted list of tasks populated by the product owner.
  
@@ -85,7 +85,7 @@ To facilitate this process we will need to have these artifacts.
 
 Goals:
 * Come up with a team workflow
-* Create a development roadmanp
+* Create a development roadmap
 * Assign roles for each team member
 * Assign priorities to each feature
 * Collect data to define our product better
