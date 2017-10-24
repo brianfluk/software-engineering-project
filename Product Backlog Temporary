@@ -10,7 +10,10 @@ Product Backlog Temporary
 	Priority: Very High
 	Size: 5
 
-- Set up 
+- Set up SQL Database for Lectures/Chats/Message archival
+	Description: Create a definition for tables, relationships. Test adding and retrieval
+	Priority: Very High
+	Size: 5
 
 - Create Chat Client
 	Description: Create a rudimentary chat client that supports connection between multiple users.
@@ -28,3 +31,4 @@ Product Backlog Temporary
 	Size: 5
 
 // I'll define these in deeper detail as I go along!
+// We'll need to break down these tasks as we go along!!!!
