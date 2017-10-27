@@ -1,4 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
+# Scrum Vaders
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
@@ -6,12 +6,12 @@
 
 ## Iteration XX
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
+ * Start date: 10/22/17
+ * End date: 11/13/17
 
 ## Process
 
-(Optional:) Quick introduction
+(Optional:) Quick introduction: This iteration we plan to create a web app having basic functionality of our project. It 
 
 #### Roles & responsibilities
 
@@ -26,6 +26,8 @@ Describe meetings (and other events) you are planning to have:
  * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
 
 #### Artifacts
+
+We are using github projects organized with the following columns todo, review/test, done and each member of the team has a column for what tasks they currently are assigned.
 
 List/describe the artifacts you will produce in order to organize your team.       
 
@@ -50,6 +52,14 @@ For example, "we use pull-requests" is not a precise statement since it leaves t
 ## Product
 
 #### Goals and tasks
+- Log in page for students
+- view availble courses and lectures
+- The lecture page with slides and chat (Future of agregating by questions??)
+   -Color sort chat messages so to make the chat more readable ie questions =red, anouncment=blue, answers=green
+- Store chat messages to database
+- Load in chat log from database
+
+- Create script (Some live action skit?)
 
  * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
  * Order the items from most to least important.
@@ -58,6 +68,9 @@ For example, "we use pull-requests" is not a precise statement since it leaves t
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
+
+- Heroku account running
+
 
  * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
  * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
