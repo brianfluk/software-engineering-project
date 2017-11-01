@@ -7,16 +7,51 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="google" value="notranslate">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme.css" rel="stylesheet" type="text/css">
 
-  <title>My App</title>
+  <title>Select your courses -- LectureChat</title>
 </head>
 
 <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand main-title" href="/index"><span><img src="/images/logo.png" alt="LC-logo" class="navbar-logo"></span> &nbsp;Lecture Chat</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Sign in</button>
+          <a class="btn btn-default" href="/login" role="button">Login page</a>
+        </form>
+      </div>
+    </div>
+  	</nav>
 
-	<div>
-		<h1>Where selecting course and lecture goes</h1>
+  	<div class="jumbotron">
+    	<div class="container">
+      		<h1>Select your lecture</h1>
+      		<p>Go to your class.</p>
+    	</div>
+  	</div>
+
+	<div class="container">
+		<div class="row">
+			<h1>Where selecting course and lecture goes</h1>
+			<p> populate this page with buttons based on the database? </p>
+		</div>
 	</div>
 
  

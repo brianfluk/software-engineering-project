@@ -1,0 +1,19 @@
+.navbar-brand {
+  font-size: 32px;
+}
+
+.navbar-logo {
+	margin-top:-8px;
+	width:40px;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);*/
+  /*color: rgb(209, 255, 240);*/
+  color: white;
+}
+
+ .navbar-inverse {
+ 	background-color: rgb(25, 90, 140);
+}

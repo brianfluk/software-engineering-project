@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="google" value="notranslate">
  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme.css" rel="stylesheet" type="text/css">
  
-  <title>Scrum Vaders Chatroom</title>
+  <title>LectureChat</title>
 </head>
  
 <body>
@@ -23,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Lecture Chat</a>
+        <a class="navbar-brand main-title" href="/index"><span><img src="/images/logo.png" alt="LC-logo" class="navbar-logo"></span> &nbsp;Lecture Chat</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right">
@@ -34,6 +36,7 @@
             <input type="password" placeholder="Password" class="form-control">
           </div>
           <button type="submit" class="btn btn-success">Sign in</button>
+          <a class="btn btn-default" href="/login" role="button">Login page</a>
         </form>
       </div>
     </div>
@@ -41,31 +44,26 @@
  
   <div class="jumbotron">
     <div class="container">
-      <h1>Hello, world!</h1>
+      <h1>Welcome to Lecture Chat!</h1>
       <p>
-        This is a template for a simple marketing or informational website. It includes a large callout
-        called a jumbotron and three supporting pieces of content. Use it as a starting point to create
-        something more unique.
+        Chat with your classmates in lecture to enhance your learning experience.
       </p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
     </div>
   </div>
  
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h2>Login Page</h2>
-        <p>Click the button to login!</p>
-        <p><a class="btn btn-default" href="/login" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h2>Course PDFS</h2>
-        <p>A collection of pdfs to go along with your courses. </p>
+        <!-- <p>A collection of pdfs to go along with your courses. </p> -->
+        <p>An archive of PDFs for your courses. </p>
         <p><a class="btn btn-default" href="/viewer" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h2>Courses</h2>
-        <p>Click here to choose yours courses</p>
+        <!-- <p>Click here to choose your courses</p> -->
+        <p>Find your course here. </p>
         <p><a class="btn btn-default" href="/select" role="button">View details &raquo;</a></p>
       </div>
     </div>
@@ -73,7 +71,7 @@
     <hr>
  
     <footer>
-      <p>&copy; Scrum Vaders 2017</p>
+      <p>&copy; ScrumVaders 2017</p>
     </footer>
   </div> <!-- /container -->
  
