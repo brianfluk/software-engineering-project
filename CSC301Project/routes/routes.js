@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
- 
+
 router.get('/', function(req, res) {
 	res.render('index');
 });
@@ -28,7 +28,7 @@ router.get('/select', function(req, res) {
 
 // Error fallthrough
 router.get('*', function(req, res) {
-  	res.render('error', {message: "ERROR"});
+  	res.render('error', {message: "404 Page Not Found", status: 404});
 });
 
 module.exports = router;

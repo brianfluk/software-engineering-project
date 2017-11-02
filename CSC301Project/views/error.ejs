@@ -7,18 +7,56 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="google" value="notranslate">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
-  <title>My App</title>
+  -->
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme.css" rel="stylesheet" type="text/css">
+  <title>Error</title>
 </head>
 
 <body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand main-title" href="/index"><span><img src="/images/logo.png" alt="LC-logo" class="navbar-logo"></span> &nbsp;Lecture Chat</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Sign in</button>
+          <a class="btn btn-default" href="/login" role="button">Login page</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
 
 	<div>
 		<h1><%= message %></h1>
 	</div>
 
- 
+  <footer>
+      <p>&copy; ScrumVaders 2017</p>
+  </footer>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </div> <!-- /container -->
+
+
 </body>
 </html>
