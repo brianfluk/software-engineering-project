@@ -1,5 +1,5 @@
 CREATE TABLE "instructor" (
-	"id" integer NOT NULL,
+	"id" serial NOT NULL,
 	"name" varchar(32) NOT NULL,
 	"username" varchar(32) NOT NULL,
 	"password" varchar(32) NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE "instructor" (
 
 
 CREATE TABLE "course" (
-	"id" integer NOT NULL,
+	"id" serial NOT NULL,
 	"name" varchar(32) NOT NULL,
 	"term" varchar(8) NOT NULL,
 	CONSTRAINT Course_pk PRIMARY KEY ("id")
@@ -28,7 +28,7 @@ CREATE TABLE "courseInstructor" (
 
 
 CREATE TABLE "lecture" (
-	"id" integer NOT NULL,
+	"id" serial NOT NULL,
 	"name" varchar(32) NOT NULL,
 	"pdf" bytea,
 	CONSTRAINT Lecture_pk PRIMARY KEY ("id")
@@ -37,7 +37,7 @@ CREATE TABLE "lecture" (
 
 
 CREATE TABLE "post" (
-	"id" integer NOT NULL,
+	"id" serial NOT NULL,
 	"type" integer NOT NULL,
 	"poster" varchar(32) NOT NULL,
 	"message" varchar(255) NOT NULL,
