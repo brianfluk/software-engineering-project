@@ -1,0 +1,194 @@
+Scenes
+
+	I: Context
+		CSC373 is really hard.
+		Professor goes too fast.
+		Literally just re-create one of the lectures for a bit.
+	Some ideas.
+		-- IN A WORLD WHERE CS STUDENTS MUST FEND FOR THEMSELVES. csc373 etc etc
+		-- Narrative voice over of what the people are going to see. Probably gonna go with this one.
+
+	Explain how lectures are not always the best.
+		Points to cover
+			- Some questions pop up during lecture but are forgotten
+			- Some issues are lecture specific
+			- Questions are nice but single-channel. We want to be able to multicast
+
+	II: Demo
+		- A skit with example of use case. We'll re-do the use case in our product md.
+		- Use 373 as the background of the discussion.
+		- See if we can secure a lecture room.
+		- Can actually get the footage before the product is completed.
+		- Input that footage later.
+
+	Allot some time for in-class questions and stuff
+		- One example where student asks a question and another student answers
+		- One example where many students have the same question, teacher checks chat and sees confusion
+		- One example where student makes a comment on teaching style etc. And is reviewed later
+	Allot some time for out of class review
+		- Teacher looks at the class review revises the lecture accordingly.
+	III: Discussion
+		- The power of fast-response
+		- The power of having access to a realtime stream of student consciousness
+		- Utilizing the majority of student knowledge
+
+		- Next steps
+		- TBD based on stuff.
+
+Script:
+	
+	[Do some pretty story-animations]
+
+	Ever been confused in lecture? I mean, I'm sure we all have. But when you're sitting in the classroom, everyone's listening, intent, and engaged. When that confusion strikes what do you do? Wait for an opportunity to ask that question? Raise a hand? Leave it there dangling for possibly minutes. Maybe you aren't brave enough. Then what? Hope for someone else to ask the same question? Or do you wait till the end of class, and ask the professor directly. It doesn't always work, there might be a really big queue. Do you wait? Do you have the time to wait? A lot of times we don't.
+
+	Maybe we'll ask later on piazza. But this transient question that's formed in your head will quickly be crowded out by hundreds of other questions and new information. It'll be sent to the recesses of your mind, forgotten only to be remembered when it comes up as a question on a mid-term or exam.
+
+	Maybe you do remember, then you ask on piazza or wait in office hours. This process takes time, time that you could have spent doing other things.
+
+	Questions and confusion will always happen, but in alleviating that confusion or answering that question
+	We can begin indentifying some problems:
+		1. Questions are transient
+			The longer you put the question off, the less likely you are to ask it or even remember it
+		2. There is limited "Question" bandwidth during a lecture
+			There's only one professor and only one stream of answers. This greatly limits the questions that can get through, leading to Queues. -> 1
+		3. Some people are to shy to ask their questions for fear of sounding dumb
+			Or maybe they're just apathetic, because asking the question is a heavy process that involves, hand-holding, waiting, and articulation
+		4. We waste time in going through existing channels
+
+
+We have all been confused during lecture at one point or another. And when that confusion hits a question inevitably follows. To answer this question we have several choices.
+[don't read all of them]
+	1. If we are brave enough, we can ask the question in class.
+	2. We can ask the question after class by talking to the professor directly
+	3. We can ask a friend.
+	4. We can go to office hours
+	5. We can go on piazza.
+
+However, these existing methods are inneficient, and in some cases unreliable. Why?
+	
+	1. Although the professor is the most complete source of knowledge, there is only one professor and he/she can only answer questions so fast. Thus not all questions will be answered, or a queue inevitably forms.
+		Options 1 and 2 suffer from this.
+	2. We won't always be in contact with people who have the knowledge base required to answer our questions.
+		Option 3 suffers from this.
+	3. Questions are transient, and the longer we put them off the less likely they are to be answered.
+		Options 4 and 5 suffer from this.
+
+We would like to introduce an application that solves these problems, by using an anonymous web-based in-class chatting platform.
+
+[45-48 seconds]
+
+[Skit part]
+
+[While Prof sets up chatroom on teacher side of the program]
+	VO: Our application allows professors to create and archive anonymous chatrooms for each of their courses.
+	VO: Students can access this chatroom by typing in a user-generated link.
+[~15 seconds]
+
+[Scene]
+Prof: Hello, and welcome to the third lecture of CSC373. Today we will be testing an in-class chat system. Just connect to this URL in a web-browser and you're good to go. It's completely anonymous, so feel free to say whatever you want, but please stay civil.
+[~15 seconds]
+
+[Students access the in class chat ~3 seconds]
+[Post some memes maybe idk]
+
+Prof: Today we're going to be discussing duals and primals in regards to LP.
+Prof: We begin by saying that for any LP problem the feasible solution of a dual is greater than...
+[~8 seconds]
+
+[Cut to student B acting confused]
+[Freeze frame. Cut to black and white]
+VO: In this situation, student a is confused. He uses our chat application to ask the question, hoping that some other student has the answer.
+[Student A looks at computer and begins typing question]
+[~10 seconds]
+
+[Cut to application]
+>>> What's a dual? He didn't explain anything about it.
+[~3 seconds]
+
+[Cut to student B]
+VO: Student B, who knows what duals and primals are, explains the concept to student A.
+>>> Basically, for any LP problem the dual is the minimization counter-part. That is, if you were to convert a maximization problem to a minimization problem, the dual would be the minimization problem. Also the primal is the original maximization problem.
+[8 seconds]
+
+[Lecture goes on]
+Prof: For any pair of a dual and primal. Any solution for a dual is greater than any solution of a primal. The opposite is true.
+	Because of this the optimal solution is one where the dual and primal solutions are equal.
+[8 seconds]
+
+[Cut to whole class]
+VO: The whole class is pretty confused about this point.
+[Cut to chat]
+>>> Can someone explain what he means by dual & primal?
+>>> WHAT IS GOING ON?
+>>> I wish the prof would slow down, and give us examples.
+>>> IM DROPPING THIS SHITTY COURSE
+>>> Woah dude calm down.
+VO: Unfortunately no one knows the answer to this one except the professor.
+[~15 seconds]
+
+VO: One of the main advantages of our system is that it connects the students together, and gives them a reference point. Since many people are confused, it will encourage people to ask questions for clarification. The professor will then explain.
+
+VO: Even if this doesn't happen, the professor may check chat himself and answer the question.
+[~15]
+
+[Cut to professor Looking at the chat]
+Prof: Looks like there's some confusion about duals and primals. Okay let me explain.
+...
+[~8 seconds]
+
+VO: Students can also comment about the professors teaching style
+>>> I wish he'd explain things more clearly
+>>> Maybe he should take some teaching lessons
+>>> I think the main problem is that the terms he's using aren't clearly defined.
+VO: Of course, some of it will be garbage, but there may be a hiddem gem or two.
+[~15]
+
+VO: Let us reiterate over the problems introduced at the beginning and explain how our application improves on each area.
+
+		1. Questions are transient
+			Our application encourages asking questions as they are formed.
+		2. There is limited "Question" bandwidth during a lecture
+			Our application allows students to tap into the collective knowledge base of the class
+			Instead of just the lecturer. Increasing the "Question" bandwidth.
+		3. Some people are to shy to ask their questions for fear of sounding dumb
+			Our application allows the student body to ask questions anonymously.
+		4. We waste time in going through existing channels
+			Our application gives students the ability to get their questions asked an answered as they come.
+VO: Currently our application is largely indistinguishable from most online chat rooms.
+	In the next iteration we hope to add:
+		Slide annotation
+			To allow users to reference pdf slides
+		Message types
+			To distinguish questions from answers, and comments
+		Q-A linking
+			To link answers to specific questions
+		Chat archive review
+			To allow the lecturer to review the chat logs and improve their teaching.
+La fin
+[~50 seconds]
+
+We need these clips of footage.
+
+Professor ->
+	Sitting in front of computer setting up chat room
+	Lecturing:
+
+		Hello, and welcome to the third lecture of CSC373. Today we will be testing an in-class chat system. Just connect to this URL in a web-browser and you're good to go. It's completely anonymous, so feel free to say whatever you want, but please stay civil.
+		
+		Today we're going to be discussing duals and primals in regards to LP.
+
+		We begin by saying that For any pair of a dual and primal. Any solution for a dual is greater than any solution of a primal. The opposite is true. Because of this the optimal solution is one where the dual and primal solutions are equal.
+
+	Sitting in front of computer looking at chat
+	Lecturing:
+
+		Looks like there's some confusion about duals and primals. Okay let me explain.
+
+Students ->
+	Signing into the chat application system
+	Looking confused everyone!
+
+Student A ->
+	Looking confused and typing into chat application
+Student B ->
+	Looking at student A's question and typing into chat application 
