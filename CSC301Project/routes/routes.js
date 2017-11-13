@@ -34,6 +34,10 @@ router.get('/viewer', function(req, res) {
   	res.render('viewer');
 });
 
+router.get('/chatpage', function(req, res) {
+	res.render('chatpage');
+});
+
 router.get('/select', function(req, res) {
 
 	const getLectures = 'SELECT * FROM "lecture"';

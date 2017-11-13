@@ -17,3 +17,7 @@
  .navbar-inverse {
  	background-color: rgb(25, 90, 140);
 }
+
+.lecture-list {
+	list-style: none;
+}
