@@ -1,8 +1,5 @@
 # TCHAT/Scrum Vaders
 
- > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
- > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
-
 
 ## Iteration 2 : Creating Chatrooms : 10/22/17 ~ 11/13/17
 
@@ -78,7 +75,7 @@ The tasks themselves will have these attributes:
 For this iteration we will try self-assigning tasks. That is, each team-member will assign themselves tasks that reflect with their roles. Since some tasks are more important than others, we say that for each self-assignment, if you can pick a higher priority task that suits your role, do so.
 
 ---
-**Meeting logs** -- A google doc that keeps track of key points brought up during meetings, decisions made and, poignant insights. The logs will serve to help us remember the decisions we made and why. This will be helpfull for people who miss meetings.
+**Meeting logs** -- A google doc that keeps track of key points brought up during meetings, decisions made and, poignant insights. The logs will serve to help us remember the decisions we made and why. This will be helpful for people who miss meetings.
 
 ---
 Based on the review from the previous iteration, we believe that these are the only artifacts that we need.
@@ -136,7 +133,7 @@ Our goals for this phase are
 
 -- Allow students to collaborate in class with our system
 -- Allow lecturers to create and archive chatrooms
--- Create administrative controls for lectuerers
+-- Create administrative controls for lecturers
 
 The high level tasks that allow these goals to happen are
 
@@ -146,7 +143,7 @@ The high level tasks that allow these goals to happen are
 -- Create a system for populating chatrooms from database chatlogs
 -- Create a landing page for lecturers where they can see their chatrooms and courses
 -- Create a system that allows lecturer's to organize chatrooms based on lecture and course
--- Create a login and authorization for lecturer's
+-- Create a login and authorization for lecturers
 -- Create administrative controls for lecturers.
 
 - Create script (Some live action skit?)
