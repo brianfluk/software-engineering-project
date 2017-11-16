@@ -15,6 +15,7 @@ In this iteration we want to create a basic webservice that will captures the co
 ##### Roles & responsibilities
 
 *We have kept these two positions from the last iteration*
+
 **Product Owner:** (Raymond Gao) Acts as the products key stake holder. Ensures that the work being done lines up with the products vision and works closely with the team to design and implement needed features. As well the product owner populates and maintains the product backlog.
 
 **Scrum Lord:** (Andrew Sabot) Manages the weekly sprints, coordinates meetings and decides what tasks from the backlog will be in each sprint. Also helps team members get past blockers and acquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
@@ -22,8 +23,11 @@ In this iteration we want to create a basic webservice that will captures the co
 *In addition we have subdivided our development roles based on skillsets*
 
 **Web Developer:**(Brandon, Max, Andrew, Brian) Is responsible for developing web-pages, interactions in the web-page, and routing.
+
 **UI Developer:**(Andrew, Anas, Brian) Is responsible for creating mockups, changing CSS to improve the visual appeal of pages, and designing the overall user interface.
+
 **Database Developer:**(Anas, Raymond) Is responsible for designing and implementing the database that the front end will communicate with.
+
 **Video Developer:**(Raymond) Is responsible for writing the script and producing the video for the deliverable.
 
 Each member is also responsible for reviewing the code of other members in with the same role. The video will be reviewed by all at the end of the iteration.
