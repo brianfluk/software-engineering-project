@@ -1,21 +1,28 @@
-# Scrum Vaders
+# TCHAT/Scrum Vaders
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
 
 
-## Iteration XX
+## Iteration 2 : Creating Chatrooms : 10/22/17 ~ 11/13/17
 
- * Start date: 10/22/17
- * End date: 11/13/17
+In this iteration we want to create a basic webservice that will captures the core benefits of our proposed system; connecting students together and collaborating in class.
 
-## Process
+---
 
-(Optional:) Quick introduction: This iteration we plan to create a web app having basic functionality of our project. It 
+### Process
 
-#### Roles & responsibilities
+##### Roles & responsibilities
 
-Describe the different roles on the team and the responsibilities associated with each role.
+**Product Owner:** (Raymond Gao) Acts as the products key stake holder. Ensures that the work being done lines up with the products vision and works closely with the team to design and implement needed features. As well the product owner populates and maintains the product backlog.
+
+**Scrum Lord:** (Andrew Sabot) Manages the weekly sprints, coordinates meetings and decides what tasks from the backlog will be in each sprint. Also helps team members get past blockers and acquires the resources needed for the project. The Scrum Lord also decides what to do with tasks that overflowed from previous sprints, whether they will re-inserted into the backlog or trashed.
+
+**Stakeholder:** (Brandon and Max) A team member who provides feedback on value generated and progress through the lens of one of our three stakeholders; students, lecturers, and course administrators.
+
+**Architect:** (Brandon and Anas) A team member who designs the high level structure of the system.
+
+**Developer:** (Everyone) Responsible for the creation and delivery of the system.
 
 #### Events
 
