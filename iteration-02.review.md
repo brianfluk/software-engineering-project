@@ -15,16 +15,13 @@ a page for lecture materials for all the lectures and another page for all the l
 #### Decisions that turned out well
  * A development decision that we made as a group was to build the UI and database at the same time. To accomplish this we separated into two groups, one that did the website work and the other that built the UI. In order to not have conflicts we defined the database requirements very carefully. This ended up saving us a lot of time when we connected it with the website and its flexibility has been very helpful whenever a design decision is changed.
  
- * Along with dividing the work, we paired up to complete each task. This way one person wasn't the source of truth and blockers were overcome a lot quicker than when one person was designing and implementing a feature.
+ * Along with dividing the work, we paired up to complete each task. This way one person wasn't the source of truth and blockers were overcome a lot quicker than when one person was designing and implementing a feature. This decision also allowed our coders to switch off depending on course loads and available time.
 
- * We decided that instead of students and instructors holding accounts, now instructors are the only 
+ * After each week we discussed what features we saw as critical and what could be removed to speed up development time. For example, we decided that instead of students and instructors holding accounts, now instructors are the only 
    users who have to sign in. This design change maintains the instructor's ability to add and delete course materials
-   along with still being able to add courses that they are teaching. Students are now given a read only permission to the 
-   course materials and permission to access the chat room. This significantly simplified our development process which helps 
-   us create a MVP where we can focus on more important features.
+   along with still being able to add courses that they are teaching. This significantly simplified our development process which helped us create a MVP where we can focus on more important features.
  
- * We used bootstrap for the creation of the front end. This gives us the convenience to drag and drop templates
-   with a guarantee that there are no bugs and very dynamic with different window sizes.
+ * To speed up the development process, our group decided to use bootstrap for the creation of the front end. This gives us the convenience to drag and drop templates with a guarantee that there are no bugs and very dynamic with different window sizes. Also some of our team members had experiencecreating websites like this before.
 
 #### Decisions that did not turn out as well as we hoped
  
@@ -34,11 +31,10 @@ a page for lecture materials for all the lectures and another page for all the l
    import our schedule and selecting a timeslot that works for everyone. We went back to just asking
    team members in slack for the appropriate time to meet. In order to have enough meetings we also decided to meet in groups of 3 when we couldn't find a time that worked for everyone.
    
- * Our initial decision to set up Heroku server ended up being pushed back. We decided to run the web app locally
-   for demonstration purposes and to save development time. We feel like this is a better suited task for the next 
-   deliverable. 
-   
 * We ended up not using our GitHub Projects structure the way we initially intended, but instead used it more in the planning and design stages. Tasks were created and given using projects, but our team did not update it as often as initially planned.
+
+ * Our initial decision to set up Heroku server ended up being pushed back. We decided to run the web app locally
+   for demonstration purposes and to save development time. This changes the development to be local rather than dealing with exporting to the cloud which has saved a lot of developer time. 
 
 
 #### Planned changes
@@ -65,7 +61,7 @@ group communication and overall smoother workflow.
 
 * In the plan we thought that having admin controls for lecturers was an important task for the first demo. As development process moved along and we refined what we needed for an initial demo, it was decided that our time would be better spent on choosing the correct pdf viewer and creating a better user work flow.
 
-* When we were making a storyboard for the demon, it became clear that we didn't need to have the administrative control board complete for this stage. As far as showing features go we decided it wasn't a priority compared to having a nice UI and working chatroom and PDF storage.
+* When we were making a storyboard for the demo, it became clear that we didn't need to have the administrative control board complete for this stage. As far as showing features go we decided it wasn't a priority compared to having a nice UI and working chatroom and PDF storage.
 
 
 ## Meeting Highlights
