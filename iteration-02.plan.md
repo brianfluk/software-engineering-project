@@ -1,4 +1,4 @@
-# TCHAT/Scrum Vaders
+# Scrum-Vaders (Team 17)
 
 
 ## Iteration 2 : Creating Chatrooms : 10/22/17 ~ 11/13/17
