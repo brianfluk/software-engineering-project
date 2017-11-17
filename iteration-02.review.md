@@ -28,12 +28,6 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
  
  * We used bootstrap for the creation of the front end. This gives us the convenience to drag and drop templates
    with a guarantee that there are no bugs and very dynamic with different window sizes.
- 
- 
- * 2 - 4 decisions.
- * Ordered from most to least important.
- * Explain why (i.e. give a supporting argument) you consider a decision to be successful.
- * Feel free to refer/link to process artifact(s).
 
 #### Decisions that did not turn out as well as we hoped
 
@@ -84,7 +78,22 @@ group communication and overall smoother workflow.
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
+ * Integrating our heroku server with our mock up prototype to create a fully
+ functioning webapp.
+ * Improve front-end design. We plan on following our initial plan on having 
+    a student account and creating a different interface for students.
+    This way only students registered in the class can open and access 
+    the chatroom and course material.
+ * Improve UI. Create feedback for actions given by users such as:
+    - adding courses, deleting courses.
+    - saving, editing and loading lectures.
+    - Create new buttons functionality for easier navigation between pages.
+ * Visually restructure the chat such that the questions are in red,
+   answers in green, comments in blue, Instructor in purple.
+   Answers and questions be linked like a thread.
+   Answers and comments will be indented under the specific question
 
+    
  * 2 - 4 items
  * Short (no more than one short paragraph per item)
  * High-level concepts that should guide your work for the next iteration.
