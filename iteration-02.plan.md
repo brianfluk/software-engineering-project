@@ -122,7 +122,7 @@ For example, "we use pull-requests" is not a precise statement since it leaves t
  * Don't forget to **explain why** you chose this workflow.
 
 
-
+---
 ## Product
 
 #### Goals and tasks
@@ -152,19 +152,14 @@ The high level tasks that allow these goals to happen are
  * Order the items from most to least important.
  * Feel free (but not obligated) to specify some/all tasks as user stories.
 
+---
 #### Artifacts
 
-List/describe the artifacts you will produce in order to present your project idea.
 The artifacts we will produce are
 
 UI Mockups - images that will give us a target for how the website should look & feel
+
 Database Schemas - images or tables that tell us of the relationships between tables and their entries
+
 Routing Diagrams - images that will tell us how the routing of our website will work
 
-- Heroku account running
-
-
- * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
- * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
- * Be concise, yet precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
