@@ -79,20 +79,13 @@ For this iteration we will try self-assigning tasks. That is, each team-member w
 
 ---
 Based on the review from the previous iteration, we believe that these are the only artifacts that we need.
-Artifacts that we thought of, but are useless because of overhead or the academic environment that we work in are.
+Artifacts that we thought of, but are useless because of overhead or the academic environment that we work in are:
 
 - Task Deadlines
 -- Our academic schedules will almost certainly interfere with any deadline we create as we have seen in iteration one.
 - Team Member Availability Schedules
 -- Are calculated largely based on lecture times, cannot accurately predict time taken by assignments and other projects.
 
-List/describe the artifacts you will produce in order to organize your team.       
-
- * Artifacts can be To-do lists, Task boards, schedule(s), etc.
- * We want to understand:
-   * How do you keep track of what needs to get done?
-   * How do you prioritize tasks?
-   * How do tasks get assigned to team members?
 ---
 #### Git / GitHub workflow
 Recall the workflow that was shown last iteration.
@@ -112,15 +105,6 @@ After the merge back to head happens then they will refork and work on their nex
 We will also try to inform others on slack about what parts of the code we are changing to give the team members a rough idea of what to expect of the codebase. Something along the lines of "Hey I'm going to change up the CSS for the home-page" Is a good example of a notification.
 
 We chose this workflow because it uses the best practices we were taught in lecture. Everyone gets a copy of the codebase that won't change on them while they're working and when merging if conflicts arise they can be resolved with the people most familiar with the code. We include announcements so that people can be conscious of what files might change, and possibly avoid changing those files if they can to reduce the number of merge conflicts.
-
-Describe your Git / GitHub workflow.     
-Essentially, we want to understand how your team members share a codebase and avoid conflicts.
-
- * Be concise, yet precise.      
-For example, "we use pull-requests" is not a precise statement since it leaves too many open questions - Pull-requests from where to where? Who reviews the pull-requests? Who is responsible for merging them? etc.
- * If applicable, specify any naming conventions or standards you decide to adopt.
- * Don't forget to **explain why** you chose this workflow.
-
 
 ---
 ## Product
@@ -146,11 +130,7 @@ The high level tasks that allow these goals to happen are
 - Create a login and authorization for lecturers
 - Create administrative controls for lecturers.
 
-- Create script (Some live action skit?)
-
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * Order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
+- Create the script for the demo video. 
 
 ---
 #### Artifacts
