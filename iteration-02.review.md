@@ -13,8 +13,6 @@ We managed to create the landing page with a signup navigation bar, login page, 
 a page for lecture materials for all the lectures and another page for all the live chatrooms.
 
 #### Decisions that turned out well
-
-List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
  * A development decision that we made as a group was to build the UI and database at the same time. To accomplish this we separated into two groups, one that did the website work and the other that built the UI. In order to not have conflicts we defined the database requirements very carefully. This ended up saving us a lot of time when we connected it with the website and its flexibility has been very helpful whenever a design decision is changed.
  
  * Along with dividing the work, we paired up to complete each task. This way one person wasn't the source of truth and blockers were overcome a lot quicker than when one person was designing and implementing a feature.
@@ -25,13 +23,10 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
    course materials and permission to access the chat room. This significantly simplified our development process which helps 
    us create a MVP where we can focus on more important features.
  
- 
  * We used bootstrap for the creation of the front end. This gives us the convenience to drag and drop templates
    with a guarantee that there are no bugs and very dynamic with different window sizes.
 
 #### Decisions that did not turn out as well as we hoped
-
-List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
  
  * The lack of structure for commenting code resulted in our JavaScript code becoming spaghetti'd after pushes and commits from different team members. This became problematic when we decided to change the pdf viewer to have the pdfs hosted on the node server. After a slack conversation a new commenting guideline was established.
  
@@ -47,8 +42,6 @@ List process-related (i.e. team organization) decisions that, in retrospect, wer
 
 
 #### Planned changes
-
-List any process-related changes you are planning to make (if there are any)
 * For the initial few features, some of us were committing directly to master after having another team member review their
 code. In the future this will be avoided by everyone forking the repo and doing pull requests. This will also speed up the
 process since we will not have to review each others stuff in person, instead we can pull the repo/ branch that our fellow team member has been working on.
@@ -76,8 +69,6 @@ group communication and overall smoother workflow.
 
 
 ## Meeting Highlights
-
-Going into the next iteration, our main insights are:
  * Create a fully functioning web-app by integrating our Heroku server with our prototype.
  * Make front-end design easier to use for students. We plan on following our initial plan of having 
     student accounts and creating a different interface for students.
@@ -91,10 +82,3 @@ Going into the next iteration, our main insights are:
    answers in green, comments in blue, and instructor comments in purple.
    Answers and questions be linked like a thread.
    Answers and comments will be indented under the specific question.
-
-    
- * 2 - 4 items
- * Short (no more than one short paragraph per item)
- * High-level concepts that should guide your work for the next iteration.
- * These concepts should help you decide on where to focus your efforts.
- * Can be related to product and/or process.
