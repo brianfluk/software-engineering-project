@@ -131,20 +131,20 @@ Recall the user story from iteration 1's [product plan](https://github.com/csc30
 
 Our goals for this phase are
 
--- Allow students to collaborate in class with our system
--- Allow lecturers to create and archive chatrooms
--- Create administrative controls for lecturers
+- Allow students to collaborate in class with our system
+- Allow lecturers to create and archive chatrooms
+- Create administrative controls for lecturers
 
 The high level tasks that allow these goals to happen are
 
--- Create a chatroom that supports multiple users
--- Create a system that allows lecturers to create chatrooms
--- Create a database that stores chatlogs
--- Create a system for populating chatrooms from database chatlogs
--- Create a landing page for lecturers where they can see their chatrooms and courses
--- Create a system that allows lecturer's to organize chatrooms based on lecture and course
--- Create a login and authorization for lecturers
--- Create administrative controls for lecturers.
+- Create a chatroom that supports multiple users
+- Create a system that allows lecturers to create chatrooms
+- Create a database that stores chatlogs
+- Create a system for populating chatrooms from database chatlogs
+- Create a landing page for lecturers where they can see their chatrooms and courses
+- Create a system that allows lecturer's to organize chatrooms based on lecture and course
+- Create a login and authorization for lecturers
+- Create administrative controls for lecturers.
 
 - Create script (Some live action skit?)
 
