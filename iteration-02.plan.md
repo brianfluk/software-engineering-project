@@ -3,7 +3,7 @@
 
 ## Iteration 2 : Creating Chatrooms : 10/22/17 ~ 11/13/17
 
-In this iteration we want to create a basic webservice that will captures the core benefits of our proposed system; connecting students together and collaborating in class.
+In this iteration, we want to create a basic web-service that will capture the core benefits of our proposed system, connecting students together and fostering collaboration in class.
 
 ---
 
@@ -36,12 +36,12 @@ Each member is also responsible for reviewing the code of other members in with 
 
 ~~**Daily "Standup"**~~ -> **Slack Announcements**
 
-We have found that in our first iteration, even daily discussions through slack are difficult to maintain. Instead we we decided it would be better for each person to post on slack as things come up. Group members are expected to check slack periodically and keep somewhat up to date so that if one of us runs into difficulty we can expect a response in a day or two.
+We have found that in our first iteration, even daily discussions through slack are difficult to maintain. Instead, we decided it would be better for each person to post on slack as things come up. Group members are expected to check slack periodically and keep somewhat up to date so that if one of us runs into difficulty we can expect a response in a day or two.
 
 ---
 **Review and Planning Meetings**
 
-From our first iteration we found a good meeting time would actually be before tutorial on tuesdays. This meeting serves the same purpose as before, but is restated below.
+From our first iteration we found a good meeting time would actually be before tutorial on Tuesdays. This meeting serves the same purpose as before, but is restated below.
 
 We decided to have our weekly review and planning meetings back to back, so we can review our week and plan for the next week in sequence. It makes little logical sense to have the review meeting in the middle of the scrum, as things can still occur and won't be reviewed until the middle of next scrum. The meetings will take place 11am every Tuesday in BA1220. During this meeting we will discuss the plan for next week, assign tasks for the sprint, review and improve upon our collaboration process, and touch base with stakeholders to ensure that value is being created. If possible stakeholders will demo the new features created to give feedback.
 
@@ -52,13 +52,13 @@ Code reviews will happen when a task is completed. During a code review, at leas
 
 | Event | Time | Timescale | Location | Actions |
 | ----- | ---- | --------- | -------- | ------- |
-| Slack Announcements | NA | NA| Slack | Pop in and give intermittent status updates or ask for help. Expect replies within a day or two |
+| Slack Announcements | N/A | N/A| Slack | Pop in and give intermittent status updates or ask for help. Expect replies within a day or two |
 | Review and Planning Meeting | Tuesdays 11am | 1hrs | BA1220 | Review & revise collaboration, manage completed tasks, manage backlog, plan for next week, touch base with stakeholders, evaluate value generated, demo and feedback |
 | Code Reviews | spontaneous | 10mins - 1hrs | Slack | Review and test code, create "touch up" tasks if necessary, mark tasks as "done"|
 ---
 #### Artifacts
 
-We are using github projects organized with the following columns todo, review/test, done and each member of the team has a column for what tasks they currently are assigned.
+We are using Github projects organized with the following columns to-do, review/test, done and each member of the team has a column for what tasks they currently are assigned.
 
 **Github Projects Tasks** -- We had looked into several scrum task managers like Trello but we decided that Github Projects was suitable enough for our needs. We deemed that a large overhead system like Trello was probably more than we needed. Github Projects provides a lightweight, easy to understand, easy to access way of keeping track of tasks.
 
@@ -100,7 +100,7 @@ This gives one a good high level description of how we will be operating.
 
 Each team member is expected to fork the main branch when they begin to work on a task. After completing the task a code review happens with one other member. They review the changes, test the task, and if everything is good then they will merge back into the main branch. If there is a conflict then the authors of the conflicting code will meet and try to resolve the conflict. If they cannot meet then the merge is put off until they can.
 
-After the merge back to head happens then they will refork and work on their next task.
+After the merge back to head happens then they will re-fork and work on their next task.
 
 We will also try to inform others on slack about what parts of the code we are changing to give the team members a rough idea of what to expect of the codebase. Something along the lines of "Hey I'm going to change up the CSS for the home-page" Is a good example of a notification.
 
@@ -123,8 +123,8 @@ The high level tasks that allow these goals to happen are
 
 - Create a chatroom that supports multiple users
 - Create a system that allows lecturers to create chatrooms
-- Create a database that stores chatlogs
-- Create a system for populating chatrooms from database chatlogs
+- Create a database that stores chat-logs
+- Create a system for populating chatrooms from database chat-logs
 - Create a landing page for lecturers where they can see their chatrooms and courses
 - Create a system that allows lecturer's to organize chatrooms based on lecture and course
 - Create a login and authorization for lecturers
