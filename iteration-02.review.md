@@ -1,13 +1,13 @@
 # YOUR PRODUCT/TEAM NAME
 
-## Iteration XX - Review & Retrospect
+## Iteration 02 - Review & Retrospect
 
  * When: 16 November 2017
  * Where: BA2270
 
 ## Process - Reflection
 
-Short introduction:
+Introduction:
 This iteration we designed a mock, designed and implemented the database and a prototype of the actual web app.
 We managed to create the landing page with a signup navigation bar, login page, PDF viewer in the chatroom, 
 a page for lecture materials for all the lectures and another page for all the live chatrooms.
