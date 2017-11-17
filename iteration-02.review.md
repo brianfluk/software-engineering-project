@@ -1,4 +1,4 @@
-# TCHAT/Scrum Vaders
+# Scrum Vaders (Team 17)
 
 ## Iteration 02 - Review & Retrospect
 
@@ -78,20 +78,19 @@ group communication and overall smoother workflow.
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
- * Integrating our heroku server with our mock up prototype to create a fully
- functioning web-app.
- * Improve front-end design. We plan on following our initial plan on having 
-    a student account and creating a different interface for students.
+ * Create a fully functioning web-app by integrating our Heroku server with our prototype.
+ * Make front-end design easier to use for students. We plan on following our initial plan of having 
+    student accounts and creating a different interface for students.
     This way only students registered in the class can open and access 
     the chatroom and course material.
- * Improve UI. Create feedback for actions given by users such as:
-    - adding courses, deleting courses.
-    - saving, editing and loading lectures.
+ * Improve UI and functionality by creating feedback for actions given by users such as:
+    - Adding courses, deleting courses.
+    - Saving, editing and loading lectures.
     - Create new buttons functionality for easier navigation between pages.
  * Visually restructure the chat such that the questions are in red,
-   answers in green, comments in blue, Instructor in purple.
+   answers in green, comments in blue, and instructor comments in purple.
    Answers and questions be linked like a thread.
-   Answers and comments will be indented under the specific question
+   Answers and comments will be indented under the specific question.
 
     
  * 2 - 4 items
