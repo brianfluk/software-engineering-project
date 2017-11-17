@@ -1,10 +1,5 @@
 # YOUR PRODUCT/TEAM NAME
 
- > _Note:_ This document is meant to be written during (or shortly after) your review meeting, which should happen fairly close to the due date.      
- >      
- > _Suggestion:_ Have your review meeting a day or two before the due date. This way you will have some time to go over (and edit) this document, and all team members should have a chance to make their contribution.
-
-
 ## Iteration XX - Review & Retrospect
 
  * When: 16 November 2017
@@ -12,7 +7,7 @@
 
 ## Process - Reflection
 
-(Optional) Short introduction
+Short introduction:
 This iteration we designed a mock, designed and implemented the database and a prototype of the actual web app.
 We managed to create the landing page with a signup navigation bar, login page, PDF viewer in the chatroom, 
 a page for lecture materials for all the lectures and another page for all the live chatrooms.
@@ -40,18 +35,16 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
 
 List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
  
- * The lack of decision for commenting code resulted our javascript code becoming spagettied after the different push and commits          from different team members.  
+ * The lack of structure for commenting code resulted in our javascript code becoming spagettied after the different push and commits          from different team members. This became problematic when we decided to change the pdf viewer to have the pdfs hosted on the node        server.
  
- * We ended up not using our GitHub Projects structure, because all our members are very busy with other courses.
-   We feel like it has a high overhead because we have limited time to update and check GitHub Projects.
+ * We ended up not using our GitHub Projects structure the way we initially intended, but instead used it more in the planning and design stages. Tasks were created and given using projects, but our team did not update it as often as initially planned.
  
- * The use of doodle to aid us in setting up a meeting is not very effective. We find that it was very tedious to 
-   import our schedule and selecting a timeslot that works for everyone. We went back to stick with just asking
-   team members in slack for the appropriate time to meet.
+ * The use of doodle to aid us in setting up a meeting was not very effective. We found that it was very tedious to 
+   import our schedule and selecting a timeslot that works for everyone. We went back to just asking
+   team members in slack for the appropriate time to meet. In order to have enough meetings we also decided to meet in groups of 3 when    we couldn't find a time that worked for everyone.
    
- * Our initial decision to set up heroku server ended up not being executed. We decided to run the web app locally
-   for demonstration purposes. We feel like this is a better suited task for this deliverable. We plan to implement
-   the heroku server for the next deliverable.
+ * Our initial decision to set up Heroku server ended up being pushed back. We decided to run the web app locally
+   for demonstration purposes and to save development time. We feel like this is a better suited task for the next deliverable. 
  
  * 2 - 4 decisions.
  * Ordered from most to least important.
@@ -69,12 +62,20 @@ List any process-related changes you are planning to make (if there are any)
 ## Product - Review
 
 #### Goals and/or tasks that were met/completed:
+* The goal of creating a prototype website was met. See mockup image for more details. (https://github.com/csc301-fall-2017/project-team-17/blob/master/image_prototype.pdf)
+* We implemented a pdf viewer and tested it versus a few other implementation options. This one was kept since it had the least overhead while allowing us to host the pdfs on the node server.
+* The initial chatroom was created and allows multiple users to join and discuss class questions alongside a pdf.
+* The database for both users and chat/ class logs has been created. See the db design for more details.
+(https://github.com/csc301-fall-2017/project-team-17/blob/master/db/dbDesign.png)
 
  * From most to least important.
  * Refer/link to artifact(s) that show that a goal/task was met/completed.
  * If a goal/task was not part of the original iteration plan, please mention it.
 
 #### Goals and/or tasks that were planned but not met/completed:
+* We did not run our web app on Heroku. Initially the plan was to build it on Heroku with auto deployment. After we setup the Heroku environment it became clear that it would be a lot more overhead to use Heroku for initial development, indeed we will build the product locally and port a completed server to it when we finish a deliverable.
+
+* In the plan we thought that having admin controls for lecturers was an important task for the first demo. As development process moved along and we refined what we needed for an initial demo, it was decided that our time would be better spent on choosing the correct pdf viewer and creating a better user flow.
 
  * From most to least important.
  * For each goal/task, explain why it was not met/completed.      
