@@ -21,11 +21,11 @@ a page for lecture materials for all the lectures and another page for all the l
    users who have to sign in. This design change maintains the instructor's ability to add and delete course materials
    along with still being able to add courses that they are teaching. This significantly simplified our development process which helped us create a MVP where we can focus on more important features.
  
- * To speed up the development process, our group decided to use bootstrap for the creation of the front end. This gives us the convenience to drag and drop templates with a guarantee that there are no bugs and very dynamic with different window sizes. Also some of our team members had experiencecreating websites like this before.
+ * To speed up the development process, our group decided to use bootstrap for the creation of the front end. This gives us the convenience to drag and drop templates with a guarantee that there are no bugs and very dynamic with different window sizes. Also some of our team members had experience creating websites like this before.
 
 #### Decisions that did not turn out as well as we hoped
  
- * The lack of structure for commenting code resulted in our JavaScript code becoming spaghetti'd after pushes and commits from different team members. This became problematic when we decided to change the pdf viewer to have the pdfs hosted on the node server. After a slack conversation a new commenting guideline was established.
+ * The lack of structure for commenting code resulted in our JavaScript code becoming difficult to read after pushes and commits from different team members. This became problematic when we decided to change the pdf viewer to have the pdfs hosted on the node server. After a slack conversation a new commenting guideline was established.
  
  * The use of doodle to aid us in setting up a meeting was not very effective. We found that it was very tedious to 
    import our schedule and selecting a timeslot that works for everyone. We went back to just asking
@@ -40,7 +40,7 @@ a page for lecture materials for all the lectures and another page for all the l
 #### Planned changes
 * For the initial few features, some of us were committing directly to master after having another team member review their
 code. In the future this will be avoided by everyone forking the repo and doing pull requests. This will also speed up the
-process since we will not have to review each others stuff in person, instead we can pull the repo/ branch that our fellow team member has been working on.
+process since we will not have to review each other's stuff in person, instead we can pull the repo/ branch that our fellow team member has been working on.
 
 * For the next iteration we plan to more closely follow our new commenting guidelines. We are making this change for better
 group communication and overall smoother workflow.
