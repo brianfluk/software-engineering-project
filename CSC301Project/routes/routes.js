@@ -15,14 +15,17 @@ const pool = new Pool({
 
 router.get('/', function(req, res) {
 	res.render('index');
+	console.log('At index');
 });
 
 router.get('/index', function(req, res) {
 	res.render('index');
+	console.log('At index');
 });
 
 router.get('/login', function(req, res) {
 	res.render('login');
+	console.log('At login');
 });
 
 // Example of POST
@@ -32,12 +35,20 @@ router.get('/login', function(req, res) {
 
 router.get('/viewer', function(req, res) {
   	res.render('viewer');
+  	console.log('At viewer');
 });
 
 router.get('/chatpage', function(req, res) {
-	res.render('chatpage');
+
+	// Get all posts
+
+	
+	console.log('At chatpage with lectureid = ', req.query.id);
+	// This is hardcoded for now
+	res.render('chatpage', { pdf: "A2.pdf"});
 });
 
+// Fills up the select page with lectures
 router.get('/select', function(req, res) {
 
 	const getLectures = 'SELECT * FROM "lecture"';
@@ -49,6 +60,7 @@ router.get('/select', function(req, res) {
 		}
 		lectures = querryRes.rows;
 		res.render('select', { lectures: lectures});
+		console.log('At select page');
 	});
 
 });
@@ -57,21 +69,47 @@ router.get('/select', function(req, res) {
 /* handle POST from select page, add new lecture to db if needed then render lecture page */
 router.post('/select', function(req, res) {
 	
-	var LectureType = req.body["Lecture Type"];
-	if (LectureType == "New Lecture") {
-		const insertNewLecture = 'INSERT INTO "lecture"(name) VALUES ($1)';
-		const values = [req.body['Lecture Name']];
+	// This first pert is for creating new lectures
+	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
+	var operation = req.body["operation"];
+	if (operation == "New Lecture") {
+		name = req.body['Lecture Name'];
+		name = name.replace(/\s/g, '');
+		values = [name, "default.pdf"];
+
+		const insertNewLecture = 'INSERT INTO "lecture" (name, pdf) VALUES ($1, $2)';
 
 		pool.query(insertNewLecture, values, (err, querryRes) => {
 		    if (err) {
 		        throw err
 		    }
+		    console.log("Inserted " + values + " into 'lecture'");
+		    res.redirect('select');
 		});
+		
+		//res.render('chatpage', { x: values[0]});
+	}
+	else if (operation == "Delete Lecture"){
+		const value = [req.body['Lecture ID']];
+		console.log("Lecture ID= " + value);
 
-		res.render('lecture', { x: values[0]});
+		const deleteLecture = 'DELETE FROM "lecture" WHERE id = ($1)';
+
+		pool.query(deleteLecture, value, (err, querryRes) => {
+		    if (err) {
+		        throw err
+		    }
+		    console.log("Deleted " + req.body['Lecture ID'] + " in 'lecture'");
+		    res.redirect('select');
+		});
+	//	res.render('select', { lectures: lectures});
+		
+
 	} else {
-
-		res.render('lecture', { x: req.body["Lecture Name"]});
+		// Redirecting to the correct lecture chat page
+		console.log("redirecting to "  + '/chatpage/' + "?id=" + req.body["Lecture ID"]);
+	//	res.render('chatpage', { x: req.body["Lecture Name"]});
+		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
 	}
 	
 });

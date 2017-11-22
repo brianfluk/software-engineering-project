@@ -10,7 +10,16 @@
   <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="/css/theme.css" rel="stylesheet" type="text/css">
 
-  <title>Select your courses -- LectureChat</title>
+  	<style>
+  	  #messages { list-style-type: none; margin-left:5px; padding: 0; }
+  	  #messages li:nth-child(odd) { background: #eee; }
+
+  	  ul {
+		   list-style-position: inside;
+		}
+    </style>
+
+  <title>Lecture # -- LectureChat</title>
 </head>
 
 <body>
@@ -40,63 +49,85 @@
 	    </div>
 	</nav>
 	<div class="container-fluid">
-    <div class="row">
+   		<div class="row">
 
 			<div class="col-sm-8">
 				<!-- 16:9 aspect ratio -->
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="/pdf/image_prototype.pdf"></iframe>
+					<!-- <iframe class="embed-responsive-item" src="/pdf/image_prototype.pdf"></iframe> -->
+					<iframe class="embed-responsive-item" src="/pdf/<%= pdf %>"></iframe>
 				</div>
 			</div>
 
 			<div class="col-sm-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">Chat</div>
-          <div class="panel-body">
-            <div class="container">
-								
-								
-                <div class="row message-bubble">
-									
-                		<p class="text-muted">Matt Townsen</p>
-										<span>What to do in class</span>
-									
+	        	<div class="panel panel-default">
+	        		<div class="panel-heading">Chat</div>
+	      			<div class="panel-body">
+	        				<!-- <div class="container"> -->
+	        					<ul id="messages">
+	        					</ul>
+<!-- 	       		    			<div class="row message-bubble">
+									<p class="text-muted">Matt Townsen</p>
+									<span>What to do in class</span>
 								</div>
-								
-              
-									<div class="row message-bubble">
-									
-                    <p class="text-muted">Matt Townsen</p>
-										<span>Pay attention</span>
+								<div class="row message-bubble">
+									<p class="text-muted">Matt Townsen</p>
+									<span>Pay attention</span>
 								</div>
-								
-                <div class="row message-bubble">
-                <p class="text-muted">Matt Townsen</p>
-                    <span>lol</span>
-                </div>
-                <div class="row message-bubble">
-                <p class="text-muted">Matt Townsen</p>
-                    <p>Hi</p>
-                </div>
-						</div>
+			                	<div class="row message-bubble">
+			            			<p class="text-muted">Matt Townsen</p>
+			                    	<span>lol</span>
+			        		    </div>
+			            	    <div class="row message-bubble">
+			           				<p class="text-muted">Matt Townsen</p>
+			                 	   <p>Hi</p>
+			               		</div> -->
+							<!-- </div> -->
 						
-            <div class="panel-footer">
-                 <div class="input-group">
-                  <input type="text" class="form-control">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Send</button>
-                  </span>
-                </div>
-						</div>
-						
-          </div>
+			           		<div class="panel-footer">
+			                	<div class="input-group">
+			                		<form action="">
+								      <input id="m" autocomplete="off" /><button>Send</button>
+								    </form>
+<!-- 			                  		<input type="text" class="form-control" id="m">
+			                  		<span class="input-group-btn">
+			                    		<button class="btn btn-default" type="button">Send</button>
+			                  		</span> -->
+			               		</div>
+							</div>
+	      			</div>
 				</div>
-
 			</div>
-
-    </div>
-</div>
+    	</div>
+	</div>
 	<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+
+		var socket = io();
+
+		 window.onload= function(){
+			var name = prompt("What is your name?");
+			if (name != ''){
+				socket.emit('name', name);
+			}
+		}
+
+	  $(function () {
+	    $('form').submit(function(){
+	      socket.emit('chat message', $('#m').val());
+	      $('#m').val('');
+	      return false;
+	    });
+	    socket.on('chat message', function(msg){
+	      $('#messages').append($('<li>').text(msg));
+	    });
+	  });
+
+	</script>
+ 	
 </body>
 </html>
