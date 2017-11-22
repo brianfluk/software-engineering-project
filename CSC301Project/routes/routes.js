@@ -28,6 +28,11 @@ router.get('/login', function(req, res) {
 	console.log('At login');
 });
 
+router.get('/navbar', function(req, res) {
+	res.render('navbar');
+	console.log('At navbar');
+});
+
 // Example of POST
 // router.post('/login', function(req, res) {
 // 	console.log("Something here");
