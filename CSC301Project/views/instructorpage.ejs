@@ -1,0 +1,71 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="google" value="notranslate">
+
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme.css" rel="stylesheet" type="text/css">
+
+  <title>Select your courses -- LectureChat</title>
+</head>
+
+<body>
+	<%- include navbar.ejs %>
+   
+    <div class="jumbotron">
+      <div class="container">
+          <h1>Welcome, Instructor!</h1>
+          <p>Select your course.</p>
+          <!-- <form  method="post" class="form-inline">
+              <input class="btn btn-default" type="submit" name="operation" value="New Lecture">
+                  <input class="form-control" type="text" name="Lecture Name" required="true">
+            </input> -->
+              
+          </form>
+      </div>
+    </div>
+    
+
+	<div class="container">
+		<div class="row">
+      <h1>Courses</h1>
+      <!-- ADD, DELETE, EDIT NOT IMPLEMENTED YET -->
+      <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">Add</button>
+          <button type="button" class="btn btn-default">Delete</button>
+          <button type="button" class="btn btn-default">Edit</button>
+      </div>
+      
+      <div class="row">
+        <%if (lectures.length > 0) { %>
+          <div class="row-fluid">
+            <% for(var i=0; i<lectures.length; i++) { %>
+              <div class="col-xs-6 col-md-3">
+                <!-- Just a placeholder, need courses name loaded from DB -->
+                <a class="thumbnail" href="/coursepage">
+                  <h3>Course Name</h3>
+                </a>
+              </div>  
+            <% } %>
+          </div>
+        <% } %>
+      </div>
+		</div>
+	</div>
+
+  <div class="container">
+
+  <footer>
+    <p>&copy; ScrumVaders 2017</p>
+  </footer>
+  </div>
+
+
+
+
+</body>
+</html>

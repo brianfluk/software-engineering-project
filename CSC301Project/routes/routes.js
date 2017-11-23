@@ -33,6 +33,8 @@ router.get('/navbar', function(req, res) {
 	console.log('At navbar');
 });
 
+
+
 // Example of POST
 // router.post('/login', function(req, res) {
 // 	console.log("Something here");
@@ -117,6 +119,81 @@ router.post('/select', function(req, res) {
 		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
 	}
 	
+});
+
+
+
+// intructorpage NEEDS TO BE INTEGRATED TO DB!!!!!
+// Fills up the instructorpage with lectures
+router.get('/instructorpage', function(req, res) {
+
+	const getLectures = 'SELECT * FROM "lecture"';
+	var lectures = [];
+
+	pool.query(getLectures, (err, querryRes) => {
+		if (err) {
+			throw err
+		}
+		lectures = querryRes.rows;
+		res.render('instructorpage', { lectures: lectures});
+		console.log('At instructor page');
+	});
+
+});
+
+
+/* handle POST from instructorpage, add new lecture to db if needed then render lecture page */
+router.post('/instructorpage', function(req, res) {
+	
+	// This first pert is for creating new lectures
+	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
+	var operation = req.body["operation"];
+	if (operation == "New Lecture") {
+		name = req.body['Lecture Name'];
+		name = name.replace(/\s/g, '');
+		values = [name, "default.pdf"];
+
+		const insertNewLecture = 'INSERT INTO "lecture" (name, pdf) VALUES ($1, $2)';
+
+		pool.query(insertNewLecture, values, (err, querryRes) => {
+			if (err) {
+				throw err
+			}
+			console.log("Inserted " + values + " into 'lecture'");
+			res.redirect('instructorpage');
+		});
+		
+		//res.render('chatpage', { x: values[0]});
+	}
+	else if (operation == "Delete Lecture"){
+		const value = [req.body['Lecture ID']];
+		console.log("Lecture ID= " + value);
+
+		const deleteLecture = 'DELETE FROM "lecture" WHERE id = ($1)';
+
+		pool.query(deleteLecture, value, (err, querryRes) => {
+			if (err) {
+				throw err
+			}
+			console.log("Deleted " + req.body['Lecture ID'] + " in 'lecture'");
+			res.redirect('instructorpage');
+		});
+	//	res.render('select', { lectures: lectures});
+		
+
+	} else {
+		// Redirecting to the correct lecture chat page
+		console.log("redirecting to "  + '/chatpage/' + "?id=" + req.body["Lecture ID"]);
+	//	res.render('chatpage', { x: req.body["Lecture Name"]});
+		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
+	}
+	
+});
+
+//coursepage NEEDS TO BE INTEGRATED WITH DB!!!
+router.get('/coursepage', function(req, res) {
+	res.render('coursepage');
+	console.log('At coursepage');
 });
 
 // Error fallthrough
