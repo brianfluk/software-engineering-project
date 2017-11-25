@@ -49,7 +49,7 @@ router.get('/chatpage', function(req, res) {
 
 	// Get all posts
 
-	
+
 	console.log('At chatpage with lectureid = ', req.query.id);
 	// This is hardcoded for now
 	res.render('chatpage', { pdf: "A2.pdf"});
@@ -75,7 +75,7 @@ router.get('/select', function(req, res) {
 
 /* handle POST from select page, add new lecture to db if needed then render lecture page */
 router.post('/select', function(req, res) {
-	
+
 	// This first pert is for creating new lectures
 	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
 	var operation = req.body["operation"];
@@ -93,7 +93,7 @@ router.post('/select', function(req, res) {
 		    console.log("Inserted " + values + " into 'lecture'");
 		    res.redirect('select');
 		});
-		
+
 		//res.render('chatpage', { x: values[0]});
 	}
 	else if (operation == "Delete Lecture"){
@@ -110,7 +110,7 @@ router.post('/select', function(req, res) {
 		    res.redirect('select');
 		});
 	//	res.render('select', { lectures: lectures});
-		
+
 
 	} else {
 		// Redirecting to the correct lecture chat page
@@ -118,7 +118,7 @@ router.post('/select', function(req, res) {
 	//	res.render('chatpage', { x: req.body["Lecture Name"]});
 		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
 	}
-	
+
 });
 
 
@@ -144,8 +144,8 @@ router.get('/instructorpage', function(req, res) {
 
 /* handle POST from instructorpage, add new lecture to db if needed then render lecture page */
 router.post('/instructorpage', function(req, res) {
-	
-	// This first pert is for creating new lectures
+
+	// This first part is for creating new lectures
 	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
 	var operation = req.body["operation"];
 	if (operation == "New Lecture") {
@@ -162,7 +162,7 @@ router.post('/instructorpage', function(req, res) {
 			console.log("Inserted " + values + " into 'lecture'");
 			res.redirect('instructorpage');
 		});
-		
+
 		//res.render('chatpage', { x: values[0]});
 	}
 	else if (operation == "Delete Lecture"){
@@ -179,7 +179,7 @@ router.post('/instructorpage', function(req, res) {
 			res.redirect('instructorpage');
 		});
 	//	res.render('select', { lectures: lectures});
-		
+
 
 	} else {
 		// Redirecting to the correct lecture chat page
@@ -187,15 +187,71 @@ router.post('/instructorpage', function(req, res) {
 	//	res.render('chatpage', { x: req.body["Lecture Name"]});
 		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
 	}
-	
+
 });
 
-//coursepage NEEDS TO BE INTEGRATED WITH DB!!!
+//coursepage
 router.get('/coursepage', function(req, res) {
-	res.render('coursepage');
-	console.log('At coursepage');
+  const getCourses = 'SELECT * FROM "course" ORDER BY name, term';
+	var courses = [];
+
+	pool.query(getCourses, (err, querryRes) => {
+		if (err) {
+			throw err
+		}
+		courses = querryRes.rows;
+		res.render('coursepage', { courses: courses});
+		console.log('At coursepage');
+	});
 });
 
+/* handle POST from coursepage, add new course to db if needed then render course page */
+router.post('/coursepage', function(req, res) {
+  // This first part is for creating new lectures
+	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
+	var operation = req.body["operation"];
+	if (operation == "New Course") {
+		name = req.body['Course Name'];
+		name = name.replace(/\s/g, '');
+    // Currently default to having this year as term, TODO can be added later
+		values = [name, "2017F"];
+
+		const insertNewCourse = 'INSERT INTO "course" (name, term) VALUES ($1, $2)';
+
+		pool.query(insertNewCourse, values, (err, querryRes) => {
+			if (err) {
+				throw err
+			}
+			console.log("Inserted " + values + " into 'course'");
+			res.redirect('instructorpage');
+		});
+
+		//res.render('chatpage', { x: values[0]});
+	}
+	else if (operation == "Delete Course"){
+		const value = [req.body['Course ID']];
+		console.log("Course ID= " + value);
+
+		const deleteLecture = 'DELETE FROM "course" WHERE id = ($1)';
+
+		pool.query(deleteLecture, value, (err, querryRes) => {
+			if (err) {
+				throw err
+			}
+			console.log("Deleted " + req.body['Course ID'] + " in 'course'");
+			res.redirect('instructorpage');
+		});
+	//	res.render('select', { lectures: lectures});
+
+
+	} else {
+		// Redirecting to the correct lecture chat page
+		console.log("redirecting to "  + '/chatpage/' + "?id=" + req.body["Lecture ID"]);
+	//	res.render('chatpage', { x: req.body["Lecture Name"]});
+		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
+	}
+
+});
 // Error fallthrough
 router.get('*', function(req, res) {
   	res.render('error', {message: "404 Page Not Found", status: 404});
