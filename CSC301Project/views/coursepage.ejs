@@ -10,7 +10,7 @@
   <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="/css/theme.css" rel="stylesheet" type="text/css">
 
-  <title>Select your courses -- LectureChat</title>
+  <title>Select your lecture -- LectureChat</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
     <div class="jumbotron">
       <div class="container">
-          <h1>Select your course</h1>
+          <h1>Select your lecture</h1>
           <p>Go to your class.</p>
           <form  method="post" class="form-inline">
               <input class="btn btn-default" type="submit" name="operation" value="New Course">
@@ -33,7 +33,7 @@
 
 	<div class="container">
 		<div class="row-fluid">
-            <h1>Courses Available</h1>
+            <h1>Lectures Available</h1>
 
             <%if (courses.length > 0) { %>
               <ul class="list-group lecture-list">
@@ -48,7 +48,7 @@
                       </div>
                       <div class="form-group col-xs-6">
                         <form method="post">
-                          <input class="btn btn-default" type="submit" name="operation" value="Delete Course" id=<%= courses[i].id %> >
+                          <input class="btn btn-default" type="submit" name="operation" value="Delete Lecture" id=<%= courses[i].id %> >
                           <input type="hidden" name="Course ID" value=<%= courses[i].id %>>
                         </form>
                       </div>
@@ -57,17 +57,6 @@
                 <% } %>
               </ul>
             <% } %>
-            <div class="row-fluid">
-                <ul>
-                    <li>
-                        <a href="pdf/A2.pdf">
-                            <h4>
-                                A2
-                            </h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
 
 		</div>

@@ -15,7 +15,7 @@
 
 <body>
 	<%- include navbar.ejs %>
-   
+
     <div class="jumbotron">
       <div class="container">
           <h1>Select your lecture</h1>
@@ -24,17 +24,17 @@
               <input class="btn btn-default" type="submit" name="operation" value="New Lecture">
                   <input class="form-control" type="text" name="Lecture Name" required="true">
             </input>
-              
+
           </form>
       </div>
     </div>
-    
+
 
 	<div class="container">
 		<div class="row">
 			<h1>Where selecting course and lecture goes</h1>
       <p> populate this page with buttons based on the database? </p>
-        
+
         <!-- <p><a class="btn btn-default" href="/chatpage" role="button">this isnt even being read from DB &raquo;</a></p> -->
 
         <%if (lectures.length > 0) { %>
@@ -45,13 +45,13 @@
                   <div class="form-group col-xs-6">
                     <form method="post">
                       <input class="btn btn-default" type="submit" name="Lecture Name" value=<%= lectures[i].name %> id=<%= lectures[i].id %> >
-                      <input type="hidden" name="Lecture ID" value=<%= lectures[i].id %>>  
+                      <input type="hidden" name="Course ID" value=<%= lectures[i].id %>>
                     </form>
                   </div>
                   <div class="form-group col-xs-6">
                     <form method="post">
                       <input class="btn btn-default" type="submit" name="operation" value="Delete Lecture" id=<%= lectures[i].id %> >
-                      <input type="hidden" name="Lecture ID" value=<%= lectures[i].id %>>  
+                      <input type="hidden" name="Course ID" value=<%= lectures[i].id %>>
                     </form>
                   </div>
                 </div>
@@ -59,10 +59,52 @@
             <% } %>
           </ul>
         <% } %>
-    
+
 
 		</div>
 	</div>
+
+  <div class="container">
+    <div class="row-fluid">
+            <h1>Courses Available</h1>
+
+            <%if (courses.length > 0) { %>
+              <ul class="list-group lecture-list">
+                <% for(var i=0; i<courses.length; i++) { %>
+                  <li>
+                    <div class="row">
+                      <div class="form-group col-xs-6">
+                        <form method="post">
+                          <input class="btn btn-default" type="submit" name="Course Name" value=<%= courses[i].name  + " " +courses[i].term%> id=<%= courses[i].id %> >
+                          <input type="hidden" name="Course ID" value=<%= courses[i].id %>>
+                        </form>
+                      </div>
+                      <div class="form-group col-xs-6">
+                        <form method="post">
+                          <input class="btn btn-default" type="submit" name="operation" value="Delete Course" id=<%= courses[i].id %> >
+                          <input type="hidden" name="Course ID" value=<%= courses[i].id %>>
+                        </form>
+                      </div>
+                    </div>
+                  </li>
+                <% } %>
+              </ul>
+            <% } %>
+            <div class="row-fluid">
+                <ul>
+                    <li>
+                        <a href="pdf/A2.pdf">
+                            <h4>
+                                A2
+                            </h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+  </div>
 
   <div class="container">
 
