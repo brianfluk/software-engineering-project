@@ -203,7 +203,7 @@ router.post('/instructorpage', hasName, function(req, res) {
 //coursepage
 router.get('/coursepage', hasName, function(req, res) {
   // Get all lectures for the course
-  const getCourses = 'SELECT * FROM "lecture" ORDER BY name, term';
+  const getCourses = 'SELECT * FROM "lecture" ORDER BY name';
 	var courses = [];
 
 	pool.query(getCourses, (err, querryRes) => {
