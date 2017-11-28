@@ -68,65 +68,65 @@ router.get('/chatpage', hasName, function(req, res) {
 // Fills up the select page with lectures
 router.get('/select', hasName, function(req, res) {
 
-	const getLectures = 'SELECT * FROM "lecture"';
-	var lectures = [];
+  const getCourses = 'SELECT * FROM "course" ORDER BY name, term';
+	var courses = [];
 
-	pool.query(getLectures, (err, querryRes) => {
+	pool.query(getCourses, (err, querryRes) => {
 		if (err) {
 			throw err
 		}
-		lectures = querryRes.rows;
-		res.render('select', { lectures: lectures});
-		console.log('At select page');
+		courses = querryRes.rows;
+		res.render('coursepage', { courses: courses});
+		console.log('At coursepage');
 	});
-
 });
 
 
 /* handle POST from select page, add new lecture to db if needed then render lecture page */
 router.post('/select', hasName, function(req, res) {
 
-	// This first pert is for creating new lectures
+  // This first part is for creating new lectures
 	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
 	var operation = req.body["operation"];
-	if (operation == "New Lecture") {
-		name = req.body['Lecture Name'];
+	if (operation == "New Course") {
+		name = req.body['Course Name'];
 		name = name.replace(/\s/g, '');
-		values = [name, "default.pdf"];
+    // Currently default to having this year as term, TODO can be added later
+		values = [name, "2017F"];
 
-		const insertNewLecture = 'INSERT INTO "lecture" (name, pdf) VALUES ($1, $2)';
+		const insertNewCourse = 'INSERT INTO "course" (name, term) VALUES ($1, $2)';
 
-		pool.query(insertNewLecture, values, (err, querryRes) => {
-		    if (err) {
-		        throw err
-		    }
-		    console.log("Inserted " + values + " into 'lecture'");
-		    res.redirect('select');
+		pool.query(insertNewCourse, values, (err, querryRes) => {
+			if (err) {
+				throw err
+			}
+			console.log("Inserted " + values + " into 'course'");
+			res.redirect('instructorpage');
 		});
 
 		//res.render('chatpage', { x: values[0]});
 	}
-	else if (operation == "Delete Lecture"){
-		const value = [req.body['Lecture ID']];
-		console.log("Lecture ID= " + value);
+	else if (operation == "Delete Course"){
+		const value = [req.body['Course ID']];
+		console.log("Course ID= " + value);
 
-		const deleteLecture = 'DELETE FROM "lecture" WHERE id = ($1)';
+		const deleteLecture = 'DELETE FROM "course" WHERE id = ($1)';
 
 		pool.query(deleteLecture, value, (err, querryRes) => {
-		    if (err) {
-		        throw err
-		    }
-		    console.log("Deleted " + req.body['Lecture ID'] + " in 'lecture'");
-		    res.redirect('select');
+			if (err) {
+				throw err
+			}
+			console.log("Deleted " + req.body['Course ID'] + " in 'course'");
+			res.redirect('instructorpage');
 		});
 	//	res.render('select', { lectures: lectures});
 
 
 	} else {
 		// Redirecting to the correct lecture chat page
-		console.log("redirecting to "  + '/chatpage/' + "?id=" + req.body["Lecture ID"]);
+		console.log("redirecting to "  + '/coursepage/' + "?id=" + req.body["Lecture ID"]);
 	//	res.render('chatpage', { x: req.body["Lecture Name"]});
-		res.redirect('/chatpage' + "/?id=" + req.body["Lecture ID"]);
+		res.redirect('/coursepage' + "/?id=" + req.body["Course ID"]);
 	}
 
 });
@@ -202,7 +202,8 @@ router.post('/instructorpage', hasName, function(req, res) {
 
 //coursepage
 router.get('/coursepage', hasName, function(req, res) {
-  const getCourses = 'SELECT * FROM "course" ORDER BY name, term';
+  // Get all lectures for the course
+  const getCourses = 'SELECT * FROM "lecture" ORDER BY name, term';
 	var courses = [];
 
 	pool.query(getCourses, (err, querryRes) => {
