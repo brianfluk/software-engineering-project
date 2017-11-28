@@ -1,4 +1,5 @@
 var express = require('express');
+var cookieParser = require('cookie-parser');
 var router = express.Router();
 
 // DB Connection
@@ -13,50 +14,59 @@ const pool = new Pool({
 });
 
 
-router.get('/', function(req, res) {
+router.get('/', hasName, function(req, res) {
 	res.render('index');
 	console.log('At index');
 });
 
-router.get('/index', function(req, res) {
+router.get('/index', hasName, function(req, res) {
+	//console.log('cookies are ' + req.cookies.name);
 	res.render('index');
 	console.log('At index');
 });
 
 router.get('/login', function(req, res) {
+	// Clearing cookies
+	res.clearCookie('name');
+	res.clearCookie('instructor');
 	res.render('login');
 	console.log('At login');
 });
 
-router.get('/navbar', function(req, res) {
+router.post('/login', function(req, res) {
+	console.log('Post Login');
+	var name = req.body.name;
+	name = name.replace(/\s/g, '');
+	console.log('name is ' + name);
+	res.cookie('name', name).send;
+	res.redirect('index');
+});
+
+router.get('/navbar', hasName, function(req, res) {
 	res.render('navbar');
 	console.log('At navbar');
 });
-
-
 
 // Example of POST
 // router.post('/login', function(req, res) {
 // 	console.log("Something here");
 // });
 
-router.get('/viewer', function(req, res) {
+router.get('/viewer', hasName, function(req, res) {
   	res.render('viewer');
   	console.log('At viewer');
 });
 
-router.get('/chatpage', function(req, res) {
+router.get('/chatpage', hasName, function(req, res) {
 
 	// Get all posts
-
-
 	console.log('At chatpage with lectureid = ', req.query.id);
 	// This is hardcoded for now
-	res.render('chatpage', { pdf: "A2.pdf"});
+	res.render('chatpage', { pdf: "A2.pdf", roomID: req.query.id});
 });
 
 // Fills up the select page with lectures
-router.get('/select', function(req, res) {
+router.get('/select', hasName, function(req, res) {
 
 	const getLectures = 'SELECT * FROM "lecture"';
 	var lectures = [];
@@ -74,7 +84,7 @@ router.get('/select', function(req, res) {
 
 
 /* handle POST from select page, add new lecture to db if needed then render lecture page */
-router.post('/select', function(req, res) {
+router.post('/select', hasName, function(req, res) {
 
 	// This first pert is for creating new lectures
 	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
@@ -125,7 +135,7 @@ router.post('/select', function(req, res) {
 
 // intructorpage NEEDS TO BE INTEGRATED TO DB!!!!!
 // Fills up the instructorpage with lectures
-router.get('/instructorpage', function(req, res) {
+router.get('/instructorpage', hasName, function(req, res) {
 
 	const getLectures = 'SELECT * FROM "lecture"';
 	var lectures = [];
@@ -143,7 +153,7 @@ router.get('/instructorpage', function(req, res) {
 
 
 /* handle POST from instructorpage, add new lecture to db if needed then render lecture page */
-router.post('/instructorpage', function(req, res) {
+router.post('/instructorpage', hasName, function(req, res) {
 
 	// This first part is for creating new lectures
 	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
@@ -191,7 +201,7 @@ router.post('/instructorpage', function(req, res) {
 });
 
 //coursepage
-router.get('/coursepage', function(req, res) {
+router.get('/coursepage', hasName, function(req, res) {
   const getCourses = 'SELECT * FROM "course" ORDER BY name, term';
 	var courses = [];
 
@@ -206,7 +216,7 @@ router.get('/coursepage', function(req, res) {
 });
 
 /* handle POST from coursepage, add new course to db if needed then render course page */
-router.post('/coursepage', function(req, res) {
+router.post('/coursepage', hasName, function(req, res) {
   // This first part is for creating new lectures
 	//console.log([req.body['Lecture Name'], req.body["Lecture ID"], req.body["Lecture Type"]]);
 	var operation = req.body["operation"];
@@ -256,5 +266,12 @@ router.post('/coursepage', function(req, res) {
 router.get('*', function(req, res) {
   	res.render('error', {message: "404 Page Not Found", status: 404});
 });
+
+function hasName(req, res, next){
+	if (req.cookies.name){
+		return next();
+	}
+	res.redirect('/login');
+}
 
 module.exports = router;
