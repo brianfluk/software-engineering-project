@@ -203,10 +203,15 @@ router.post('/instructorpage', hasName, function(req, res) {
 //coursepage
 router.get('/coursepage', hasName, function(req, res) {
   // Get all lectures for the course
-  const getCourses = 'SELECT * FROM "lecture" ORDER BY name';
+  // const getCourses = 'SELECT * FROM "lecture" ORDER BY name';
+  const value = [req.body['Course ID']];
+  console.log("Course ID= " + value);
+  // TODO select lectures that are connected to the course
+//  const getLectures = 'SELECT * FROM "courseLecture" JOIN "lecture" ON "lecture"."id" = "courseLecture"."LectureId" WHERE courseLecture.CourseId = ($1)';
+  const getLectures = 'SELECT * FROM "lecture"';
 	var courses = [];
 
-	pool.query(getCourses, (err, querryRes) => {
+	pool.query(getLectures, (err, querryRes) => {
 		if (err) {
 			throw err
 		}
