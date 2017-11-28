@@ -1,7 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
-
- > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
- > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
+# Lecture Chat
 
 
 ## Iteration 3
@@ -26,8 +23,6 @@ List the most significant changes you made to your process (if any).
  * For each change, explain why you are making it and what you are hoping to achieve from it
  * Ideally, for each change, you will define a clear success metric (i.e. something you can measure at the end of the iteration to determine whether the change you made was successful)
 
- > *Note:* If you are not making any changes to your process, it means that you are happy with all of the decisions you made in the previous iterations.
- > In this case, list what you consider to be the most significant process decisions your team made. For each decision, explain why you consider it successful, and what success metric you are using (or could use) to assert that the decision is successful.
 
 #### Roles & responsibilities
 
@@ -54,12 +49,14 @@ Each member is also responsible for reviewing the code of other members in with 
 
 
 #### Events
+Slack Announcements
 
-Describe meetings (and other events) you are planning to have:
+We will continue to use a Kanban like comunication style. That is each person will post on slack as things come up such as taking on or creating new tasks. Group members are expected to check slack periodically and keep up to date so that if one of us runs into difficulty we can expect a quick response.
 
- * When and where? In-person or online?
- * What's the **purpose** of each meeting?
- * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
+BA2270 meetings
+
+Once a week we have in person meeting to solve issues that were not resolved on Slack or need an in person discussion to solve. These meetings normally last about an hour. 
+
 
 #### Artifacts
 We are using Github projects organized with the following columns to-do, review/test, done and each member of the team has a column for what tasks they currently are working on.
@@ -76,7 +73,7 @@ The tasks themselves will have these attributes:
 - Size
 -- Will be from the range [1,5]. A size 1 job is something that might involve a few lines of code, a size 5 job is a large undertaking requiring several classes.
 
-For this iteration we will try self-assigning tasks. That is, each team-member will assign themselves tasks that reflect with their roles. Since some tasks are more important than others, we say that for each self-assignment, if you can pick a higher priority task that suits your role, do so.
+Since this worked well last iteration, we will continue to self-assigning tasks. That is, each team-member will assign themselves tasks that reflect with their roles. Since some tasks are more important than others, we say that for each self-assignment, if you can pick a higher priority task that suits your role, do so.
 
 ---
 **Meeting logs** -- A google doc that keeps track of key points brought up during meetings, decisions made and, poignant insights. The logs will serve to help us remember the decisions we made and why. This will be helpful for people who miss meetings.
