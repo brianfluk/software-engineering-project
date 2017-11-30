@@ -22,55 +22,34 @@
   <title>Lecture # -- LectureChat</title>
 </head>
 
-<body>
+<body class="bg-dark">
 	<%- include navbar.ejs %>
 	<div class="container-fluid">
    		<div class="row">
-
+			<!-- pdf -->
 			<div class="col-sm-8">
-				<!-- 16:9 aspect ratio -->
-				<div class="embed-responsive embed-responsive-16by9">
-					<!-- <iframe class="embed-responsive-item" src="/pdf/image_prototype.pdf"></iframe> -->
+				<div class="embed-responsive embed-responsive-tall">
 					<iframe class="embed-responsive-item" src="/pdf/<%= pdf %>"></iframe>
-				</div>
+				</div>	
 			</div>
-
+			<!-- chatbox -->
 			<div class="col-sm-4">
 	        	<div class="panel panel-default">
 	        		<div class="panel-heading">Chat</div>
 	      			<div class="panel-body">
-	        				<!-- <div class="container"> -->
-	        					<ul id="messages">
-	        					</ul>
-<!-- 	       		    			<div class="row message-bubble">
-									<p class="text-muted">Matt Townsen</p>
-									<span>What to do in class</span>
-								</div>
-								<div class="row message-bubble">
-									<p class="text-muted">Matt Townsen</p>
-									<span>Pay attention</span>
-								</div>
-			                	<div class="row message-bubble">
-			            			<p class="text-muted">Matt Townsen</p>
-			                    	<span>lol</span>
-			        		    </div>
-			            	    <div class="row message-bubble">
-			           				<p class="text-muted">Matt Townsen</p>
-			                 	   <p>Hi</p>
-			               		</div> -->
-							<!-- </div> -->
-						
-			           		<div class="panel-footer">
-			                	<div class="input-group">
-			                		<form action="">
-								      <input id="m" autocomplete="off" /><button>Send</button>
-								    </form>
-<!-- 			                  		<input type="text" class="form-control" id="m">
-			                  		<span class="input-group-btn">
-			                    		<button class="btn btn-default" type="button">Send</button>
-			                  		</span> -->
-			               		</div>
+						<!-- messages -->
+						<div style="height:650px; overflow:scroll;">
+							<ul id="messages"></ul>
+						</div>
+						<!-- send text -->
+						<div class="panel-footer">
+							<div class="input-group">
+								<form action="">
+								<input id="m" autocomplete="off" /><button>Send</button>
+								</form>
 							</div>
+						</div>
+
 	      			</div>
 				</div>
 			</div>

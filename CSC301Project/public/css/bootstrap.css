@@ -5308,8 +5308,8 @@ a.list-group-item-danger.active:focus {
 .panel {
   margin-bottom: 20px;
   background-color: #fff;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  /* border: 1px solid transparent; */
+  /* border-radius: 4px; */
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -5319,8 +5319,8 @@ a.list-group-item-danger.active:focus {
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  /* border-top-left-radius: 3px; */
+  /* border-top-right-radius: 3px; */
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
@@ -5537,15 +5537,16 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid #ddd;
 }
 .panel-default {
-  border-color: #ddd;
+  /* border-color: #ddd; */
+  border-color: transparent;
 }
 .panel-default > .panel-heading {
   color: #333;
-  background-color: #f5f5f5;
-  border-color: #ddd;
+  /* background-color: #f5f5f5; */
+  /* border-color: #ddd; */
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #ddd;
+  /* border-top-color: #ddd; */
 }
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;

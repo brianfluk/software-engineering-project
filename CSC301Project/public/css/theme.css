@@ -1,3 +1,10 @@
+.embed-responsive-tall {
+  padding-bottom: 90%;
+}
+
+.bg-dark {
+  background-color: rgb(54, 54, 54);
+}
 .navbar-brand {
   font-size: 32px;
 }
