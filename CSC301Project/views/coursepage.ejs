@@ -11,12 +11,20 @@
   <link href="/css/theme.css" rel="stylesheet" type="text/css">
 
   <title>Select your lecture -- LectureChat</title>
+
+  <style>
+    #list-group { list-style-type: none; margin-left:5px; padding: 0; }
+    #list-group li:nth-child(odd) { background: #eee; }
+
+    ul {
+      list-style-position: inside;
+  }
+  </style>
+
 </head>
 
 <body>
 	<%- include navbar.ejs %>
-
-
     <div class="jumbotron">
       <div class="container">
           <h1>Select your lecture</h1>
@@ -30,47 +38,51 @@
       </div>
     </div>
 
-
-	<div class="container">
-		<div class="row-fluid">
-            <h1>Lectures Available</h1>
-
-            <%if (courses.length > 0) { %>
-              <ul class="list-group lecture-list">
+    <div class="container">
+        <h1>Lectures Available</h1>
+        <br><br>
+        <div class="row">
+          <div class="col-sm-12">
+          <div class="panel panel-default chatbox" style="overflow:auto;"><!-- chatbox start -->
+              <div class="panel-body">
+              <!-- messages -->
+              <div class="chat-messages">
+              <%if (courses.length > 0) { %>
+                <ul id="list-group" class="lecture-list">
                 <% for(var i=0; i<courses.length; i++) { %>
                   <li>
                     <div class="row">
-                      <div class="form-group col-xs-6">
+                      <!-- <div class="form-group col-xs-8"> -->
+                      <div class="col-xs-10">
                         <form method="post">
-                          <input class="btn btn-default" type="submit" name="Course Name" value=<%= courses[i].name  + " " +courses[i].term%> id=<%= courses[i].id %> >
+                          <input class="btn btn-lecture" type="submit" name="Course Name" value=<%= courses[i].name  + " " +courses[i].term%> id=<%= courses[i].id %> >
                           <input type="hidden" name="Course ID" value=<%= courses[i].id %>>
                         </form>
                       </div>
-                      <div class="form-group col-xs-6">
+                      <!-- <div class="col-xs-2"></div> -->
+                      <!-- <div class="form-group col-xs-2"> -->
+                      <div class="col-xs-2">
                         <form method="post">
-                          <input class="btn btn-default" type="submit" name="operation" value="Delete Lecture" id=<%= courses[i].id %> >
+                          <input class="btn btn-lecture-delete" type="submit" name="operation" value="Delete Lecture" id=<%= courses[i].id %> >
                           <input type="hidden" name="Course ID" value=<%= courses[i].id %>>
                         </form>
                       </div>
-                    </div>
+                    </div> <!-- row -->
                   </li>
                 <% } %>
-              </ul>
-            <% } %>
-
-
-		</div>
-	</div>
+                </ul>
+              <% } %>
+              </div>
+            </div>
+          </div><!-- chatbox -->
+          </div>
+        </div>
+      </div>
 
   <div class="container">
-
-  <footer>
-    <p>&copy; ScrumVaders 2017</p>
-  </footer>
+    <footer>
+      <p>&copy; ScrumVaders 2017</p>
+    </footer>
   </div>
-
-
-
-
 </body>
 </html>

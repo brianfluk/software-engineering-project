@@ -15,20 +15,17 @@
 
 <body>
 	<%- include navbar.ejs %>
-
     <div class="jumbotron">
       <div class="container">
           <h1>Select your lecture</h1>
           <p>Go to your class.</p>
           <form  method="post" class="form-inline">
-              <input class="btn btn-default" type="submit" name="operation" value="New Lecture">
-                  <input class="form-control" type="text" name="Lecture Name" required="true">
+            <input class="btn btn-default" type="submit" name="operation" value="New Lecture">
+                <input class="form-control" type="text" name="Lecture Name" required="true">
             </input>
-
           </form>
       </div>
     </div>
-
 
 	<div class="container">
 		<div class="row">
@@ -85,32 +82,24 @@
                           <input type="hidden" name="Course ID" value=<%= courses[i].id %>>
                         </form>
                       </div>
-                    </div>
+                    </div> <!-- row -->
                   </li>
                 <% } %>
               </ul>
             <% } %>
+
             <div class="row-fluid">
-                <ul>
-                    <li>
-                        <a href="pdf/A2.pdf">
-                            <h4>
-                                A2
-                            </h4>
-                        </a>
-                    </li>
-                </ul>
+              <ul>
+                <li><a href="pdf/A2.pdf"><h4>A2</h4></a></li>
+              </ul>
             </div>
-
-
-    </div>
-  </div>
+    </div> <!--row-fluid-->
+  </div><!--container-->
 
   <div class="container">
-
-  <footer>
-    <p>&copy; ScrumVaders 2017</p>
-  </footer>
+    <footer>
+      <p>&copy; ScrumVaders 2017</p>
+    </footer>
   </div>
 
 
