@@ -1,5 +1,32 @@
 .embed-responsive-tall {
-  padding-bottom: 90%;
+  padding-bottom: 110%;
+}
+
+.chatbox {
+  height: calc(100vh - 145px);  
+}
+
+.chat-messages {
+  height:calc(100vh - 190px);
+  overflow:auto;
+}
+
+.pdf {
+  border-radius:4px;
+}
+
+.blue {
+  color: white;
+  background-color:rgb(25, 90, 140);
+}
+
+.panel-heading-blue {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  background-color: rgb(25, 90, 140);
+  color: white;  
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .bg-dark {

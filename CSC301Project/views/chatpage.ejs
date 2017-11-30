@@ -22,32 +22,34 @@
   <title>Lecture # -- LectureChat</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" style="overflow:hidden;">
 	<%- include navbar.ejs %>
 	<div class="container-fluid">
    		<div class="row">
 			<!-- pdf -->
 			<div class="col-sm-8">
-				<div class="embed-responsive embed-responsive-tall">
-					<iframe class="embed-responsive-item" src="/pdf/<%= pdf %>"></iframe>
+				<div class="embed-responsive embed-responsive-tall pdf"  >
+					<iframe class="embed-responsive-item pdf" src="/pdf/<%= pdf %>"></iframe>
 				</div>	
 			</div>
 			<!-- chatbox -->
 			<div class="col-sm-4">
-	        	<div class="panel panel-default">
-	        		<div class="panel-heading">Chat</div>
+	        	<div class="panel panel-default chatbox">
+	        		<div class="panel-heading-blue">Chat</div>
 	      			<div class="panel-body">
 						<!-- messages -->
-						<div style="height:650px; overflow:scroll;">
+						<div class="chat-messages">
 							<ul id="messages"></ul>
 						</div>
 						<!-- send text -->
 						<div class="panel-footer">
-							<div class="input-group">
-								<form action="">
-								<input id="m" autocomplete="off" /><button>Send</button>
-								</form>
-							</div>
+							<form action"">
+								<div class="input-group">
+								<input id="m" autocomplete="off" type="text" class="form-control" 
+								placeholder="Discuss your lecture content" aria-describedby="basic-addon2">
+								<span class="input-group-addon blue" id="basic-addon2">Send</span>
+								</div>
+							</form>
 						</div>
 
 	      			</div>
